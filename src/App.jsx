@@ -10,7 +10,7 @@ import NavBar from "./sections/NavBar";
 
 function App() {
   return (
-    <div className="bg-[#011238] text-white w-full">
+    <div className="bg-[#011238] text-white w-full antialiased">
       <NavBar />
       <Header />
       {/* CARDS */}
@@ -70,8 +70,9 @@ function App() {
           <div className="space-y-7">
             <p>
               The competition is high, things change all the time, and the
-              agencies don’t really speak your language: you don’t want to spend
-              hours trying to making sense of data and analytics.
+              agencies don’t really speak your language:{" "}
+              <span className="text-[#AB72D8]">you don’t want to spend hours </span>trying to making sense
+              of data and analytics.
             </p>
             <p>
               Not only that- how in the world are you supposed to keep it up
@@ -79,8 +80,8 @@ function App() {
               up?
             </p>
             <p>
-              We get it, it’s overwhelming. And the truth is, you shouldn’t have
-              to worry about it. You didn’t go to school to become a
+              We get it, it’s overwhelming. And the truth is, <span className="text-[#AB72D8]">you shouldnt have
+              to worry about it</span>. You didn’t go to school to become a
               professional marketer. We did.
             </p>
           </div>
