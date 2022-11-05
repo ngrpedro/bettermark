@@ -1,5 +1,11 @@
 import { ArrowDownIcon, CalendarIcon } from "@chakra-ui/icons";
 import { Button, IconButton } from "@chakra-ui/react";
+import {
+  ArrowRight,
+  FacebookLogo,
+  InstagramLogo,
+  TwitterLogo
+} from "phosphor-react";
 import handshake from "./assets/handshake.svg";
 import img1 from "./assets/img1.svg";
 import img2 from "./assets/img2.svg";
@@ -51,13 +57,13 @@ function App() {
       {/* BANNER */}
       <div className="padding-container py-20">
         <div
-          className="p-10 rounded-[20px] text-center bg-gradient-to-t font-quatt space-y-5
+          className="p-6 md:p-10 rounded-[20px] text-center bg-gradient-to-t font-quatt space-y-5
                 from-[#AABBDD] to-[#9747FF] font-bold text-2xl leading-8 text-[#011238]"
         >
-          <h1 className="block text-3xl underline underline-offset-4 text-white">
+          <h1 className="block text-xl md:text-3xl underline underline-offset-4 text-white">
             Increasing your sales is always a challenge.
           </h1>
-          <p>
+          <p className="text-base">
             And although everyone brags about how good online marketing is, its
             just very hard to take the best of this opportunity if you are not
             an expert.
@@ -65,14 +71,17 @@ function App() {
         </div>
       </div>
       {/* IMAGES */}
-      <div className="padding-container ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center">
+      <div className="padding-container">
+        <div className="grid grid-cols-1 md:grid-cols-2 reverse gap-5 items-center justify-center">
+          <img src={img1} alt="" className="block md:hidden" />
           <div className="space-y-7">
             <p>
               The competition is high, things change all the time, and the
               agencies don’t really speak your language:{" "}
-              <span className="text-[#AB72D8]">you don’t want to spend hours </span>trying to making sense
-              of data and analytics.
+              <span className="text-[#AB72D8]">
+                you don’t want to spend hours{" "}
+              </span>
+              trying to making sense of data and analytics.
             </p>
             <p>
               Not only that- how in the world are you supposed to keep it up
@@ -80,14 +89,17 @@ function App() {
               up?
             </p>
             <p>
-              We get it, it’s overwhelming. And the truth is, <span className="text-[#AB72D8]">you shouldnt have
-              to worry about it</span>. You didn’t go to school to become a
-              professional marketer. We did.
+              We get it, it’s overwhelming. And the truth is,{" "}
+              <span className="text-[#AB72D8]">
+                you shouldnt have to worry about it
+              </span>
+              . You didn’t go to school to become a professional marketer. We
+              did.
             </p>
           </div>
-          <img src={img1} alt="" className="" />
+          <img src={img1} alt="" className="hidden md:block" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:-mt-32 gap-5 items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:-mt-32 gap-5 items-center justify-center">
           <img src={img2} alt="" />
           <div className="space-y-7">
             <p>
@@ -105,13 +117,13 @@ function App() {
 
       {/* TEXTS */}
       <div className="padding-container py-20 text-center">
-        <h1 className="text-4xl font-quatt">
+        <h1 className="text-xl md:text-4xl font-quatt">
           We offer more than marketing services. We are here to help you with
           your entire sales process. That way we can control the outcome and
           guarantee results.
         </h1>
-        <div className="border-t border-gray-600 my-12 mx-48"></div>
-        <h1 className="text-4xl font-quatt">
+        <div className="border-t border-gray-600 my-12 md:mx-48"></div>
+        <h1 className="text-xl md:text-4xl font-quatt">
           We understand you need an agency you can trust, that will create more
           value to your business than you pay them for. And if you don’t get
           results, we don’t get paid. What about that?
@@ -126,8 +138,8 @@ function App() {
           fontWeight={"bold"}
           fontSize="16px"
           lineHeight={"19pxp"}
-          bg={"#FF6E4F"}
-          _hover={{ bg: "#FF6E4F" }}
+          bg={"#AB72D8"}
+          _hover={{ opacity: 0.8 }}
           icon={<ArrowDownIcon />}
         />
       </div>
@@ -194,9 +206,9 @@ function App() {
       </div>
 
       {/* PROMISES */}
-      <div className="padding-container py-20 ">
-        <div className="grid grid-cols-1 md:grid-cols-5 items-start gap-20">
-          <h1 className="md:col-span-5 text-5xl font-bold font-quatt">
+      <div className="padding-container py-20 text-center space-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-5 text-center md:items-start gap-20">
+          <h1 className="md:col-span-5 text-3xl md:text-5xl font-bold font-quatt">
             Getting things done does’t move the needle in your business.
           </h1>
           <div className="space-y-5 md:col-span-2">
@@ -269,6 +281,8 @@ function App() {
         </div>
         <Button
           bg={"#FF6E4F"}
+          _hover={{ opacity: 0.8 }}
+          _active={{ opacity: 0.8 }}
           rounded={"full"}
           py="12px"
           px="40px"
@@ -281,7 +295,76 @@ function App() {
       </div>
 
       {/* FOOTER */}
-      <div className="padding-container py-20 bg-[#56128C]"></div>
+      <div className="padding-container py-20 bg-[#56128C] grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className=" flex items-start justify-start gap-5">
+          <div>
+            <h1 className="text-xl my-2 font-bold">Quick Links</h1>
+            <ul>
+              <li className="flex items-center gap-2">
+                <ArrowRight size={8} />
+                Link
+              </li>
+              <li className="flex items-center gap-2">
+                <ArrowRight size={8} />
+                Link
+              </li>
+              <li className="flex items-center gap-2">
+                <ArrowRight size={8} />
+                Link
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 className="text-xl my-2 font-bold">Contact Indo</h1>
+            <ul>
+              <li className="flex items-center gap-2">
+                <ArrowRight size={8} />
+                Menu
+              </li>
+              <li className="flex items-center gap-2">
+                <ArrowRight size={8} />
+                Menu
+              </li>
+              <li className="flex items-center gap-2">
+                <ArrowRight size={8} />
+                Menu
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className=" flex items-start justify-start gap-5">
+          <IconButton
+            aria-label="Search database"
+            rounded={"full"}
+            fontWeight={"bold"}
+            fontSize="16px"
+            lineHeight={"19pxp"}
+            bg={"#AB72D8"}
+            _hover={{ opacity: 0.8 }}
+            icon={<FacebookLogo size={28} />}
+          />
+          <IconButton
+            aria-label="Search database"
+            rounded={"full"}
+            fontWeight={"bold"}
+            fontSize="16px"
+            lineHeight={"19pxp"}
+            bg={"#AB72D8"}
+            _hover={{ opacity: 0.8 }}
+            icon={<InstagramLogo size={28} />}
+          />
+          <IconButton
+            aria-label="Search database"
+            rounded={"full"}
+            fontWeight={"bold"}
+            fontSize="16px"
+            lineHeight={"19pxp"}
+            bg={"#AB72D8"}
+            _hover={{ opacity: 0.8 }}
+            icon={<TwitterLogo size={28} />}
+          />
+        </div>
+      </div>
     </div>
   );
 }

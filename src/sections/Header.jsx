@@ -3,10 +3,12 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="padding-container md:py-20 flex flex-col text-center items-center justify-center gap-8">
-      <h1 className="font-bold text-6xl font-quatt">
-        Do you want to <span className="text-[#AB72D8]"> grow your business </span> while stop wasting
-        money <span className="text-[#AB72D8]"> with marketing </span> that doesnt work?
+    <div className="padding-container pb-20 pt-6 md:py-20 flex flex-col text-center items-center justify-center gap-8">
+      <h1 className="font-bold text-2xl md:text-6xl font-quatt">
+        Do you want to{" "}
+        <span className="text-[#AB72D8]"> grow your business </span> while stop
+        wasting money <span className="text-[#AB72D8]"> with marketing </span>{" "}
+        that doesnt work?
       </h1>
       <p className="font-normal text-base leading-[19px] max-w-[38rem]">
         We believe that there are only three ways to grow your business and we
@@ -14,6 +16,8 @@ const Header = () => {
       </p>
       <Button
         bg={"#FF6E4F"}
+        _hover={{ opacity: 0.8 }}
+        _active={{ opacity: 0.8 }}
         rounded={"full"}
         py="12px"
         px="40px"
