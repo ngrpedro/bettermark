@@ -51,12 +51,17 @@ function App() {
       {/* BANNER */}
       <div className="padding-container py-20">
         <div
-          className="p-10 rounded-[20px] text-center bg-gradient-to-t font-quatt
+          className="p-10 rounded-[20px] text-center bg-gradient-to-t font-quatt space-y-5
                 from-[#AABBDD] to-[#9747FF] font-bold text-2xl leading-8 text-[#011238]"
         >
-          Increasing your sales is always a challenge. And although everyone
-          brags about how good online marketing is, its just very hard to take
-          the best of this opportunity if you are not an expert.
+          <h1 className="block text-3xl underline underline-offset-4 text-white">
+            Increasing your sales is always a challenge.
+          </h1>
+          <p>
+            And although everyone brags about how good online marketing is, its
+            just very hard to take the best of this opportunity if you are not
+            an expert.
+          </p>
         </div>
       </div>
       {/* IMAGES */}
