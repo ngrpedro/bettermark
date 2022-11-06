@@ -3,8 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-blueGray-200 pt-8 pb-6 bg-gradient-to-b from-[#011238] to-[#021a4f]">
-        
+    <footer className="relative bg-blueGray-200 pt-8 pb-6 bg-white text-black shadow-2xl shadow-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
@@ -106,22 +105,6 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-        <hr className="my-6 border-blueGray-300" />
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
-              <a
-                href="https://www.linkedin.com/in/pedro-nogueira399/"
-                className="text-white hover:text-gray-400"
-                target="_blank"
-              >
-                {" "}
-                Pedro Soares - All Rights Reserved © | 2022
-              </a>
-              
             </div>
           </div>
         </div>

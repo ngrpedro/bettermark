@@ -3,7 +3,7 @@ import React from "react";
 
 const Promises = () => {
   return (
-    <div className="padding-container py-20 text-center space-y-10 border-t border-gray-800">
+    <div className="padding-container py-36 text-center space-y-10 border-t border-gray-800">
       <div className="grid grid-cols-1 md:grid-cols-2 text-center gap-20">
         <div className="space-y-10">
           <h1 className="text-3xl md:text-5xl font-bold font-quatt">
