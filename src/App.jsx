@@ -6,6 +6,8 @@ import {
   InstagramLogo,
   TwitterLogo
 } from "phosphor-react";
+import arrow from "./assets/arrow-right.png";
+import arrow1 from "./assets/arrow-right1.svg";
 import handshake from "./assets/handshake.svg";
 import img1 from "./assets/img1.svg";
 import img2 from "./assets/img2.svg";
@@ -149,28 +151,16 @@ function App() {
       </div>
 
       {/* STEPS */}
-
-      <div className="padding-container max-w-3xl m-auto">
-        <ol className="relative border-l border-gray-200 dark:border-gray-700">
-          <li className="mb-10 ml-6">
-            <span
-              className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 
-            rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
-            >
-              <svg
-                aria-hidden="true"
-                className="w-3 h-3 text-blue-600 dark:text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
+      <div className="padding-container m-auto max-w-5xl">
+        <ol className="relative ">
+          <li className="mb-10 flex gap-5 items-center justify-center">
+            <div className=" hidden sm:block">
+              <img
+                src={arrow}
+                alt=""
+                className="origin-center rotate-[12deg] max-w-sm"
+              />
+            </div>
             <div
               className="bg-[#093185] px-6 py-6 rounded-xl text-start 
                 space-y-4 hover:shadow-lg transition-all"
@@ -195,25 +185,7 @@ function App() {
               </Button>
             </div>
           </li>
-          <li className="mb-10 ml-6">
-            <span
-              className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 
-            rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
-            >
-              <svg
-                aria-hidden="true"
-                className="w-3 h-3 text-blue-600 dark:text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
+          <li className="mb-10 flex gap-5 items-center justify-center">
             <div
               className="bg-[#093185]  px-6 py-6 rounded-xl text-start
                 space-y-4 hover:shadow-lg transition-all"
@@ -226,26 +198,14 @@ function App() {
                 we already started working on your SEO/PPC campaigns
               </p>
             </div>
+            <div className=" hidden sm:block">
+              <img src={arrow1} alt="" className=" max-w-sm " />
+            </div>
           </li>
-          <li className="ml-6">
-            <span
-              className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 
-            rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
-            >
-              <svg
-                aria-hidden="true"
-                className="w-3 h-3 text-blue-600 dark:text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
+          <li className="flex gap-5 items-center justify-center">
+            <div className=" hidden sm:block">
+              <img src={arrow} alt="" className=" max-w-sm " />
+            </div>
             <div
               className="bg-[#093185]  px-6 py-6 rounded-xl text-start
                 space-y-4 hover:shadow-lg transition-all"
