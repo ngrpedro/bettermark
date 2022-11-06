@@ -21,7 +21,7 @@ const Promises = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="flex flex-col gap-4 items-start justify-center bg-[#ED64A6] p-4 rounded-lg">
             <div className="">
               <CalendarIcon className="" />
@@ -57,7 +57,7 @@ const Promises = () => {
               don’t get paid.
             </p>
           </div>
-          <div className="col-span-2 mt-8 block">
+          <div className="sm:col-span-2 mt-8 block">
             <Button
               bg={"#FF6E4F"}
               _hover={{ opacity: 0.8 }}
