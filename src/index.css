@@ -73,11 +73,11 @@ body,
 }
 
 .moca-bg {
-  background-image: url("./assets/moca.png");
+  background-image: url("./assets/pessoas.png");
   background-size: 20rem 20rem;
   background-repeat: no-repeat;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  background-color: #ab72d8;
+  /*  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+  background-color: #000;
   width: 20rem;
   height: 19rem;
 }

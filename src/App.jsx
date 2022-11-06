@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/react";
+import pessoas from "./assets/pessoas.png";
 import Cards from "./sections/Cards";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
@@ -15,14 +16,14 @@ function App() {
       <Header />
       <Cards />
       <div
-        className="padding-container relative bg-white 
-          grid grid-cols-1 md:grid-cols-2 items-center justify-center"
+        className="padding-container relative py-20
+          grid grid-cols-1 md:grid-cols-2 items-center justify-center "
       >
-        <div className="space-y-5">
-          <h1 className="block text-xl md:text-3xl font-quatt text-black">
+        <div className="flex flex-col items-start justify-between h-full py-6">
+          <h1 className="block text-xl md:text-5xl font-quatt text-[#a283f4]">
             Increasing your sales is always a challenge.
           </h1>
-          <p className="text-base text-black">
+          <p className="text-base">
             And although everyone brags about how good online marketing is, its
             just very hard to take the best of this opportunity if you are not
             an expert.
@@ -40,16 +41,11 @@ function App() {
           >
             Schedule a call
           </Button>
-          <div className="icon1 absolute top-0"></div>
-          <div className="icon2 absolute top-20 left-10"></div>
-          <div className="icon3 absolute top-28 left-96"></div>
-          <div className="icon4 absolute bottom-3 right-[45rem]"></div>
         </div>
 
         <div className="flex items-center justify-center text-black">
           <div className="">
-            <div className="moca-bg">
-            </div>
+            <img src={pessoas} alt="" className="rounded-lg" />
           </div>
         </div>
       </div>
