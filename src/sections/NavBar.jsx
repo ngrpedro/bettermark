@@ -12,23 +12,28 @@ import {
   useDisclosure
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
+import logo from '../assets/Logo.png';
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
   return (
-    <nav className="bg-gradient-to-b from-[#00081b] via-[#00081bb4] to-transparent z-50
-    flex items-center justify-between pt-6 pb-6 padding-container sticky top-0 shadow-lg">
-      <a href="#">Logo</a>
-
-      <ul className="hidden md:flex items-center justify-center gap-4">
+    <nav
+      className=" to-transparent z-50 bg-white
+    flex items-center justify-between py-4 padding-container sticky top-0 shadow-lg"
+    >
+      {" "}
+      {/* bg-gradient-to-b from-[#00081b] via-[#00081bb4] */}
+      <a href="#">
+        <img src={logo} alt="" className="w-24" />
+      </a>
+      <ul className="hidden md:flex items-center justify-center gap-4 text-[#011238]">
         <li>Menu</li>
         <li>Menu</li>
         <li>Menu</li>
         <li>Menu</li>
       </ul>
-
       <div className="flex md:hidden">
         <IconButton
           onClick={onOpen}
@@ -36,7 +41,7 @@ const NavBar = () => {
           bg={"transparent"}
           _hover={{ bg: "transparent" }}
           _active={{ bg: "transparent" }}
-          icon={<HamburgerIcon />}
+          icon={<HamburgerIcon color={'black'}/>}
         />
       </div>
       <Drawer
@@ -46,7 +51,7 @@ const NavBar = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bg={"#011238"} color={"#fff"}>
+        <DrawerContent bg={"#fff"} color={"#011238"}>
           <DrawerCloseButton />
           <DrawerHeader>Better Marketing</DrawerHeader>
 
