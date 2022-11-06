@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className=" to-transparent z-50 bg-white
+      className=" to-transparent bg-white z-[200]
     flex items-center justify-between py-4 padding-container sticky top-0 shadow-lg"
     >
       {" "}

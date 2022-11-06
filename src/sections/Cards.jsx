@@ -7,38 +7,50 @@ import tap from "../assets/tap.svg";
 const Cards = () => {
   return (
     <div
-      className="padding-container grid grid-cols-1 gap-5 max-w-[33rem] md:max-w-full m-auto
-      md:grid-cols-3 text-center items-center justify-between py-10 pb-20"
+      className="padding-container grid grid-cols-1 gap-5 md:max-w-full m-auto relative
+      sm:grid-cols-3 text-center items-center justify-between py-10 pb-20"
     >
       <div
-        className="flex flex-col items-start text-start justify-start gap-3 p-4 h-full bg-[#040f2c]
-                rounded-md border-b-8 border-blue-900"
+        className="flex flex-col items-start text-start justify-start gap-3 px-8 py-5 h-full bg-[#1e315a] hover:shadow-lg transition-shadow delay-100
+                rounded-md border-b-8 border-[#a283f4] z-[100]"
       >
-        <img src={tap} alt="" className="" />
-        <p>ATTENTION</p>
+        <div className="flex flex-col items-start gap-1">
+          <img src={tap} alt="" className="w-[3rem] -ml-2" />
+          <p className="text-2xl font-bold ">Attention</p>
+        </div>
         <p>Drive the RIGHT traffic to your website.</p>
       </div>
 
       <div
-        className="flex flex-col items-start text-start justify-start gap-3 p-4 h-full bg-[#040f2c]
-                rounded-md border-b-8 border-blue-900"
+        className="flex flex-col items-start text-start justify-start gap-3 px-8 py-5 h-full bg-[#1e315a] hover:shadow-lg transition-shadow delay-100
+        rounded-md border-b-8 border-[#a283f4] z-[100]"
       >
-        <img src={handshake} alt="" className="" />
-        <p>CONVERSION</p>
+        <div className="flex flex-col items-start gap-1">
+          <img src={handshake} alt="" className="w-[3rem]" />
+          <p className="text-2xl font-bold ">Conversion</p>
+        </div>
+
         <p>Get your business ready to close every client that shows up.</p>
       </div>
 
       <div
-        className="flex flex-col items-start text-start justify-start gap-3 p-4 h-full bg-[#040f2c]
-                rounded-md border-b-8 border-blue-900"
+        className="flex flex-col items-start text-start justify-start gap-3 px-8 py-5 h-full bg-[#1e315a] hover:shadow-lg transition-shadow delay-100
+        rounded-md border-b-8 border-[#a283f4] z-[100]"
       >
-        <img src={money} alt="" className="" />
-        <p>PROFITS</p>
+        <div className="flex flex-col items-start gap-1">
+          <img src={money} alt="" className="w-[3rem]" />
+          <p className="text-2xl font-bold " p>
+            Profits
+          </p>
+        </div>
+
         <p>
           Give more value and your customer will spend more with yo and more buy
           more times
         </p>
       </div>
+
+      <div className="bg-[#eaeaea] absolute inset-x-0  bottom-0 top-[40%] z-[1]"></div>
     </div>
   );
 };
