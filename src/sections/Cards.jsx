@@ -8,11 +8,10 @@ const Cards = () => {
   return (
     <div
       className="padding-container grid grid-cols-1 
-      md:grid-cols-3 text-center items-center justify-between"
+      md:grid-cols-3 text-center items-center justify-between bg-gradient-to-b from-[#011238] via-[#063292] py-10"
     >
       <div
-        className="flex flex-col items-center justify-start gap-3 p-4 border h-full
-        border-[#011238] hover:border-gray-400 transition-colors delay-100"
+        className="flex flex-col items-center justify-start gap-3 p-4 h-full"
       >
         <img src={tap} alt="" />
         <p>ATTENTION</p>
@@ -20,8 +19,7 @@ const Cards = () => {
       </div>
 
       <div
-        className="flex flex-col items-center justify-start gap-3 p-4 border h-full
-        border-[#011238] hover:border-gray-400 transition-colors delay-100"
+        className="flex flex-col items-center justify-start gap-3 p-4 h-full"
       >
         <img src={handshake} alt="" />
         <p>CONVERSION</p>
@@ -29,8 +27,7 @@ const Cards = () => {
       </div>
 
       <div
-        className="flex flex-col items-center justify-start gap-3 p-4 border h-full
-        border-[#011238] hover:border-gray-400 transition-colors delay-100"
+        className="flex flex-col items-center justify-start gap-3 p-4 h-full"
       >
         <img src={money} alt="" />
         <p>PROFITS</p>

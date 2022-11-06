@@ -5,7 +5,7 @@ const Banners = () => {
   return (
     <div className="padding-container py-20">
       <div
-        className="p-6 md:p-10 rounded-[20px] bg-gradient-to-l font-quatt space-y-5 from-[#AABBDD] to-[#9747FF]
+        className="p-6 md:p-10 rounded-[20px] font-quatt space-y-5 md:space-y-0 bg-gradient-to-t md:bg-gradient-to-l from-[#AABBDD] to-[#9747FF]
            font-bold text-2xl leading-8 text-[#011238] grid grid-cols-1 md:grid-cols-3"
       >
         <div className="md:col-span-2 space-y-5">
