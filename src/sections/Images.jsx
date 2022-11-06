@@ -32,10 +32,15 @@ const Images = () => {
             . You didn’t go to school to become a professional marketer. We did.
           </p>
         </div>
-        <img src={img1} alt="" className="hidden md:block" />
+        <div className="max-w-md m-auto">
+          <img src={img1} alt="" className="hidden md:block" />
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:-mt-32 gap-5 items-center justify-center">
-        <img src={img2} alt="" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:-mt-20 gap-5 items-center justify-center">
+        <div className="max-w-md m-auto">
+          <img src={img2} alt="" />
+        </div>
+
         <div className="space-y-7 text-justify">
           <h1 className="text-4xl font-bold font-quatt">That is why</h1>
           <p>
