@@ -6,7 +6,7 @@ import thumbup from "../assets/thumb-up.svg";
 
 const Steps = () => {
   return (
-    <div className="padding-container py-20 m-auto border-t border-gray-800">
+    <div className="padding-container py-36 m-auto border-t border-gray-800">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div className="flex items-start">
           <div className="w-56">

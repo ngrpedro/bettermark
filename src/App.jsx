@@ -52,6 +52,13 @@ function App() {
       <Images />
       <Texts />
       <Steps />
+      <div className="padding-container py-20 text-center bg-[#eaeaea] text-gray-900">
+        <h1 className="text-xl md:text-4xl font-quatt">
+          We understand you need an agency you can trust, that will create more
+          value to your business than you pay them for. And if you don’t get
+          results, we don’t get paid. What about that?
+        </h1>
+      </div>
       <Promises />
       <Footer />
     </div>
