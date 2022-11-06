@@ -60,7 +60,7 @@ function App() {
           className="p-6 md:p-10 rounded-[20px] text-center bg-gradient-to-t font-quatt space-y-5
                 from-[#AABBDD] to-[#9747FF] font-bold text-2xl leading-8 text-[#011238]"
         >
-          <h1 className="block text-xl md:text-3xl underline underline-offset-4 text-white">
+          <h1 className="block text-xl md:text-3xl text-white font-quatt">
             Increasing your sales is always a challenge.
           </h1>
           <p className="text-base">
@@ -74,10 +74,13 @@ function App() {
       <div className="padding-container">
         <div className="grid grid-cols-1 md:grid-cols-2 reverse gap-5 items-center justify-center">
           <img src={img1} alt="" className="block md:hidden" />
-          <div className="space-y-7">
-            <p>
-              The competition is high, things change all the time, and the
-              agencies don’t really speak your language:{" "}
+          <div className="space-y-7 text-justify">
+            <h1 className="text-4xl font-bold font-quatt">
+              The competition is high
+            </h1>
+            <p className="text-justify">
+              Things change all the time, and the agencies don’t really speak
+              your language:{" "}
               <span className="text-[#AB72D8]">
                 you don’t want to spend hours{" "}
               </span>
@@ -101,11 +104,12 @@ function App() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:-mt-32 gap-5 items-center justify-center">
           <img src={img2} alt="" />
-          <div className="space-y-7">
+          <div className="space-y-7 text-justify">
+            <h1 className="text-4xl font-bold font-quatt">That is why</h1>
             <p>
-              That is why we want to eliminate digital marketing completely from
-              your to do list and develop a marketing strategy that will
-              increase your profits and help you achieve your goals.
+              We want to eliminate digital marketing completely from your to do
+              list and develop a marketing strategy that will increase your
+              profits and help you achieve your goals.
             </p>
             <p>
               That way, you can continue working on what you’re good at: growing
@@ -145,64 +149,118 @@ function App() {
       </div>
 
       {/* STEPS */}
-      <div
-        className="padding-container bg-gradient-to-b from-transparent via-[#022062] 
-                to-transparent text-center space-y-16"
-      >
-        <div
-          className="grid grid-cols-1 
-          md:grid-cols-3 gap-5 mt-10"
-        >
-          <div
-            className="bg-[#011238] p-3 rounded-xl border-t-8 border-white 
+
+      <div className="padding-container max-w-3xl m-auto">
+        <ol className="relative border-l border-gray-200 dark:border-gray-700">
+          <li className="mb-10 ml-6">
+            <span
+              className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 
+            rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            >
+              <svg
+                aria-hidden="true"
+                className="w-3 h-3 text-blue-600 dark:text-blue-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <div
+              className="bg-[#093185] px-6 py-6 rounded-xl text-start 
                 space-y-4 hover:shadow-lg transition-all"
-          >
-            <h1 className="text-2xl">STEP 1</h1>
+            >
+              <h1 className="text-xl font-bold">STEP 1</h1>
 
-            <p>
-              You schedule a call, we talk about your business and goals and we
-              recommend the best plan and prices for you. No commitment.
-            </p>
-          </div>
-
-          <div
-            className="bg-[#011238] p-3 rounded-xl border-t-8 border-white 
+              <p>
+                You schedule a call, we talk about your business and goals and
+                we recommend the best plan and prices for you. No commitment.
+              </p>
+              <Button
+                w="full"
+                bg={"#FF6E4F"}
+                rounded={"full"}
+                py="12px"
+                px="40px"
+                fontWeight={"bold"}
+                fontSize="16px"
+                lineHeight={"19pxp"}
+              >
+                Schedule a call
+              </Button>
+            </div>
+          </li>
+          <li className="mb-10 ml-6">
+            <span
+              className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 
+            rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            >
+              <svg
+                aria-hidden="true"
+                className="w-3 h-3 text-blue-600 dark:text-blue-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <div
+              className="bg-[#093185]  px-6 py-6 rounded-xl text-start
                 space-y-4 hover:shadow-lg transition-all"
-          >
-            <h1 className="text-2xl">STEP 2</h1>
+            >
+              <h1 className="text-xl font-bold">STEP 2</h1>
 
-            <p>
-              Once you say yes, we send you all the support material and
-              training and book the first coaching session. In the mean time we
-              already started working on your SEO/PPC campaigns
-            </p>
-          </div>
-
-          <div
-            className="bg-[#011238] p-3 rounded-xl border-t-8 border-white 
+              <p>
+                Once you say yes, we send you all the support material and
+                training and book the first coaching session. In the mean time
+                we already started working on your SEO/PPC campaigns
+              </p>
+            </div>
+          </li>
+          <li className="ml-6">
+            <span
+              className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 
+            rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            >
+              <svg
+                aria-hidden="true"
+                className="w-3 h-3 text-blue-600 dark:text-blue-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <div
+              className="bg-[#093185]  px-6 py-6 rounded-xl text-start
                 space-y-4 hover:shadow-lg transition-all"
-          >
-            <h1 className="text-2xl">STEP 3</h1>
+            >
+              <h1 className="text-xl font-bold">STEP 3</h1>
 
-            <p>
-              Monthly we analise results and performance, adjust strategies and
-              keep educating and coaching you for a life time relationship. And
-              you can just enjoy the feeling of watching your business
-              skyrocketing.
-            </p>
-          </div>
-        </div>
-        <Button
-          bg={"#FF6E4F"}
-          rounded={"full"}
-          py="12px"
-          px="40px"
-          fontWeight={"bold"}
-          fontSize="16px"
-          lineHeight={"19pxp"}
-        >
-          Schedule a call
-        </Button>
+              <p>
+                Monthly we analise results and performance, adjust strategies
+                and keep educating and coaching you for a life time
+                relationship. And you can just enjoy the feeling of watching
+                your business skyrocketing.
+              </p>
+            </div>
+          </li>
+        </ol>
       </div>
 
       {/* PROMISES */}
