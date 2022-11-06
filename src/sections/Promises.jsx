@@ -1,4 +1,3 @@
-import { CalendarIcon } from "@chakra-ui/icons";
 import { Button } from "@chakra-ui/react";
 import React from "react";
 
@@ -23,35 +22,23 @@ const Promises = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="flex flex-col gap-4 items-start justify-center bg-[#ED64A6] p-4 rounded-lg">
-            <div className="">
-              <CalendarIcon className="" />
-            </div>
             <p className="text-start">
               We want to build a relationship of years with you. So we are
               driven by your results.
             </p>
           </div>
           <div className="flex flex-col gap-4 items-start justify-center  bg-[#667EEA] p-4 rounded-lg">
-            <div className="">
-              <CalendarIcon className="" />
-            </div>
             <p className="text-start">
               We want to communicate the best. Our data will inform you, not
               confuse you.
             </p>
           </div>
           <div className="flex flex-col gap-4 items-start justify-center  bg-[#9F7AEA] p-4 rounded-lg">
-            <div className="">
-              <CalendarIcon className="" />
-            </div>
             <p className="text-start">
               There is no lock-in contract. We want you stay for the results.
             </p>
           </div>
           <div className="flex flex-col gap-4 items-start justify-center  bg-[#3ABAB4] p-4 rounded-lg">
-            <div className="">
-              <CalendarIcon className="" />
-            </div>
             <p className="text-start">
               And we are committed to make it work. If you are not happy, we
               don’t get paid.
