@@ -16,13 +16,9 @@ function App() {
       <Cards />
       <Banners />
       <Images />
-
       <Texts />
-
       <Steps />
-
       <Promises />
-
       <Footer />
     </div>
   );

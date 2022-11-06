@@ -1,5 +1,5 @@
-import { ArrowDownIcon } from '@chakra-ui/icons';
-import { IconButton } from '@chakra-ui/react';
+import { ArrowDownIcon } from "@chakra-ui/icons";
+import { IconButton } from "@chakra-ui/react";
 import React from "react";
 
 const Texts = () => {
@@ -10,7 +10,11 @@ const Texts = () => {
         entire sales process. That way we can control the outcome and guarantee
         results.
       </h1>
-      <div className="border-t border-gray-600 my-12 md:mx-48"></div>
+      <div className="my-12 md:mx-48 flex items-center justify-center gap-8">
+        <div className="border-t border-gray-600 w-full "></div>
+        <p className="text-4xl md:text-6xl text-gray-400">&&</p>
+        <div className="border-t border-gray-600 w-full "></div>
+      </div>
       <h1 className="text-xl md:text-4xl font-quatt">
         We understand you need an agency you can trust, that will create more
         value to your business than you pay them for. And if you don’t get

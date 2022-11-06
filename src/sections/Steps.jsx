@@ -5,7 +5,7 @@ import arrow from "../assets/arrow-right.png";
 import arrow1 from "../assets/arrow-right1.svg";
 const Steps = () => {
   return (
-    <div className="padding-container m-auto max-w-5xl">
+    <div className="padding-container py-20 m-auto max-w-5xl border-t border-gray-800">
       <ol className="relative ">
         <li className="mb-10 flex gap-5 items-center justify-center">
           <div className=" hidden sm:block">
