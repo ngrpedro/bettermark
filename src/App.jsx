@@ -16,11 +16,11 @@ function App() {
       <Header />
       <Cards />
       <div
-        className="padding-container relative py-20
+        className="padding-container relative py-20 gap-10
           grid grid-cols-1 md:grid-cols-2 items-center justify-center "
       >
-        <div className="flex flex-col items-start justify-between h-full py-6">
-          <h1 className="block text-xl md:text-5xl font-quatt text-[#a283f4]">
+        <div className="flex flex-col items-start justify-between gap-5 h-full min-h-[20rem] py-6 max-w-[33rem] m-auto">
+          <h1 className="block text-5xl md:text-5xl font-quatt text-[#a283f4]">
             Increasing your sales is always a challenge.
           </h1>
           <p className="text-base">

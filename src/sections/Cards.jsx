@@ -7,7 +7,7 @@ import tap from "../assets/tap.svg";
 const Cards = () => {
   return (
     <div
-      className="padding-container grid grid-cols-1 gap-5
+      className="padding-container grid grid-cols-1 gap-5 max-w-[33rem] md:max-w-full m-auto
       md:grid-cols-3 text-center items-center justify-between py-10 pb-20"
     >
       <div

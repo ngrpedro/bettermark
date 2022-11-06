@@ -1,10 +1,8 @@
-import { ArrowDownIcon } from "@chakra-ui/icons";
-import { IconButton } from "@chakra-ui/react";
 import React from "react";
 
 const Texts = () => {
   return (
-    <div className="padding-container py-20 text-center">
+    <div className="padding-container py-20 text-center bg-[#eaeaea] text-gray-900">
       <h1 className="text-xl md:text-4xl font-quatt">
         We offer more than marketing services. We are here to help you with your
         entire sales process. That way we can control the outcome and guarantee
@@ -12,7 +10,7 @@ const Texts = () => {
       </h1>
       <div className="my-12 md:mx-48 flex items-center justify-center gap-8">
         <div className="border-t border-gray-600 w-full "></div>
-        <p className="text-4xl md:text-6xl text-gray-400">&&</p>
+        <p className="text-4xl md:text-6xl text-gray-500">&&</p>
         <div className="border-t border-gray-600 w-full "></div>
       </div>
       <h1 className="text-xl md:text-4xl font-quatt">
@@ -21,7 +19,7 @@ const Texts = () => {
         results, we don’t get paid. What about that?
       </h1>
 
-      <IconButton
+      {/* <IconButton
         className="animate-bounce"
         aria-label="Search database"
         rounded={"full"}
@@ -33,7 +31,7 @@ const Texts = () => {
         bg={"#AB72D8"}
         _hover={{ opacity: 0.8 }}
         icon={<ArrowDownIcon />}
-      />
+      /> */}
     </div>
   );
 };
