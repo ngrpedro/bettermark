@@ -18,7 +18,7 @@ const NavBar = () => {
   const btnRef = useRef();
 
   return (
-    <nav className="bg-gradient-to-b from-[#00081b] via-[#00081bb4] to-transparent
+    <nav className="bg-gradient-to-b from-[#00081b] via-[#00081bb4] to-transparent z-50
     flex items-center justify-between pt-6 pb-6 padding-container sticky top-0 shadow-lg">
       <a href="#">Logo</a>
 
