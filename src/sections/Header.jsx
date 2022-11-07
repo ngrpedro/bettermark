@@ -1,17 +1,17 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-import MainImage from "../assets/MainImage";
+import mainimage from "../assets/mainimage.svg";
 
 const Header = () => {
   return (
     <div className="padding-container pb-20 pt-10 md:pt-20 md:pb-10 flex flex-col text-center items-center justify-center gap-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-16 items-center justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center justify-center">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-left font-quatt">
           Do you want to <span className="text-[#AB72D8]"> grow your business </span> while stop wasting
           money <span className="text-[#AB72D8]"> with marketing </span> that doesnt work?
         </h1>
         <div className="m-auto ">
-          <MainImage className=""/>
+          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-md"/>
         </div>
       </div>
       <p className="font-normal text-lg leading-[19px] max-w-[38rem] mt-8">

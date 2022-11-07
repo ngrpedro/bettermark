@@ -56,11 +56,8 @@ const Conversation = () => {
                             <div className=' pl-5 space-y-2'>
                                 <h1 className='font-bold text-xl'>The competition is high</h1>
                                 <p className="text-lg">
-                                    things change all the time, and the agencies don’t really speak your language
-                                    <span className="text-[#a283f4]">
-                                        You don’t want to spend hours
-                                    </span>
-                                    trying to making sense of data and analytics.
+                                    things change all the time, and the agencies don’t really speak your language:
+                                    You don’t want to spend hours trying to making sense of data and analytics.
                                 </p>
                             </div>
                         </div>
@@ -87,7 +84,7 @@ const Conversation = () => {
                                 <p className="text-lg">
                                     it’s overwhelming. And the truth is, you shouldnt have to worry about it.
                                     You didn’t go to school to become a professional marketer.{" "}
-                                    <span className="text-[#a283f4]">We did</span>.
+                                    We did.
                                 </p>
                             </div>
                         </div>
