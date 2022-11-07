@@ -11,7 +11,7 @@ const Header = () => {
           money <span className="text-[#AB72D8]"> with marketing </span> that doesnt work?
         </h1>
         <div className="m-auto ">
-          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-md"/>
+          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-xl"/>
         </div>
       </div>
       <p className="font-normal text-lg leading-[19px] max-w-[38rem] mt-8">
