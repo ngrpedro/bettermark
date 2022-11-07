@@ -6,7 +6,7 @@ import thumbup from "../assets/thumb-up.svg";
 
 const Steps = () => {
   return (
-    <div className="padding-container py-36 m-auto border-t border-gray-800">
+    <div className="padding-container pt-24 pb-16 m-auto border-t border-gray-800">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div className="flex items-start">
           <div className="w-56">
@@ -42,20 +42,6 @@ const Steps = () => {
               You schedule a call, we talk about your business and goals and we
               recommend the best plan and prices for you. No commitment.
             </p>
-            <Button
-              w="full"
-              bg={"#FF6E4F"}
-              _hover={{ opacity: 0.8 }}
-              _active={{ opacity: 0.8 }}
-              rounded={"full"}
-              py="12px"
-              px="40px"
-              fontWeight={"bold"}
-              fontSize="16px"
-              lineHeight={"19pxp"}
-            >
-              Schedule a call
-            </Button>
           </div>
         </div>
 
@@ -130,6 +116,24 @@ const Steps = () => {
               skyrocketing.
             </p>
           </div>
+        </div>
+
+        <div className="md:col-span-3 flex items-center justify-center">
+
+          <Button
+          mt="5"
+            bg={"#FF6E4F"}
+            _hover={{ opacity: 0.8 }}
+            _active={{ opacity: 0.8 }}
+            rounded={"full"}
+            py="12px"
+            px="40px"
+            fontWeight={"bold"}
+            fontSize="16px"
+            lineHeight={"19pxp"}
+          >
+            Schedule a call
+          </Button>
         </div>
       </div>
     </div>
