@@ -9,46 +9,80 @@ import Promises from "./sections/Promises";
 import Steps from "./sections/Steps";
 import Texts from "./sections/Texts";
 
+import text from "./assets/texte.svg";
+import Arrow from './assets/arrow';
+
+
 function App() {
   return (
-    <div className="bg-[#011238] text-white w-full antialiased">
+    <div className="text-white w-full antialiased">
       <NavBar />
-      <Header />
-      <Cards />
-      <div
-        className="padding-container relative pt-10 pb-24 gap-10 bg-[#eaeaea]
-          grid grid-cols-1 md:grid-cols-2 items-center justify-center "
-      >
-        <div className="flex flex-col items-start justify-between gap-5 h-full min-h-[20rem] py-6 max-w-[33rem] m-auto">
-          <h1 className="block text-5xl md:text-5xl font-quatt text-black">
+      <div className="bg-[#011238]">
+        <Header />
+        <Cards />
+      </div>
+
+      <div className="bg-[#eaeaea]">
+
+        <div
+          className="padding-container relative py-10 gap-10 
+          grid grid-cols-1 md:grid-cols-2"
+        >
+          <h1 className="md:col-span-2 text-center block text-5xl md:text-5xl font-quatt text-black">
             Increasing your sales is always a challenge.
           </h1>
-          <p className="text-base text-black">
-            And although everyone brags about how good online marketing is, its
-            just very hard to take the best of this opportunity if you are not
-            an expert.
-          </p>
-          <Button
-            bg={"#FF6E4F"}
-            _hover={{ opacity: 0.8 }}
-            _active={{ opacity: 0.8 }}
-            rounded={"full"}
-            py="12px"
-            px="40px"
-            fontWeight={"bold"}
-            fontSize="16px"
-            lineHeight={"19pxp"}
-          >
-            Schedule a call
-          </Button>
-        </div>
 
-        <div className="flex items-center justify-center text-black">
-          <div className="">
-            <img src={pessoas} alt="" className="rounded-lg" />
+          {/* image */}
+          <div className="space-y-8 max-w-[33rem] mx-auto text-justify">
+            <img src="" alt="" className="rounded-lg w-full h-[13rem] object-cover flex items-center bg-gray-400" />
+            <p className="text-lg border-l-4 border-purple-900 pl-5 text-black">
+              And although everyone brags about how good online marketing is, its
+              just very hard to take the best of this opportunity if you are not
+              an expert.
+            </p>
+          </div>
+
+          <div className="space-y-5 max-w-[33rem] m-auto text-justify text-black">
+            <p className="text-lg border-l-4 border-purple-900 pl-5">
+              The competition is high things change all the time, and the agencies don’t really speak your language
+              <span className="text-[#a283f4]">
+                You don’t want to spend hours {""}
+              </span>
+              trying to making sense of data and analytics.
+            </p>
+
+            <p className="text-lg border-l-4 border-purple-900 pl-5">
+              Not only that- how in the world are you supposed to keep it up with
+              every new trend, Google Ads feature or new platforms coming up?
+            </p>
+
+            <p className="text-lg border-l-4 border-purple-900 pl-5">
+              <span className="text-[#a283f4]">We get it</span>, it’s
+              overwhelming. And the truth is, you shouldnt have to worry about it.
+              You didn’t go to school to become a professional marketer.{" "}
+              <span className="text-[#a283f4]">We did</span>.
+            </p>
+          </div>
+          {/* button */}
+          <div className="md:col-span-2 m-auto mt-5">
+            <Button
+              bg={"#FF6E4F"}
+              _hover={{ opacity: 0.8 }}
+              _active={{ opacity: 0.8 }}
+              rounded={"full"}
+              py="18px"
+              px="42px"
+              m={"auto"}
+              fontWeight={"bold"}
+              fontSize="18px"
+              lineHeight={"19px"}
+            >
+              Schedule a call
+            </Button>
           </div>
         </div>
       </div>
+
       <Images />
       <Texts />
       <Steps />
