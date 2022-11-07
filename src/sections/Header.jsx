@@ -4,13 +4,20 @@ import React from "react";
 const Header = () => {
   return (
     <div className="padding-container pb-20 pt-6 md:pt-20 md:pb-10 flex flex-col text-center items-center justify-center gap-8">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-      <h1 className="font-bold text-4xl md:text-5xl text-left font-quatt">
-        Do you want to <span className="text-[#AB72D8]"> grow your business </span> while stop wasting
-        money <span className="text-[#AB72D8]"> with marketing </span> that doesnt work?
-      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <h1 className="font-bold text-4xl md:text-5xl lg:text-left font-quatt">
+          Do you want to <span className="text-[#AB72D8]"> grow your business </span> while stop wasting
+          money <span className="text-[#AB72D8]"> with marketing </span> that doesnt work?
+        </h1>
+        <div>
+          <div className="bg-gray-500 w-48 h-48 m-auto" style={{
+            clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)"
+          }}>
+
+          </div>
+        </div>
       </div>
-      <p className="font-normal text-base leading-[19px] max-w-[38rem] mt-10">
+      <p className="font-normal text-lg leading-[19px] max-w-[38rem] mt-10">
         We believe that there are only three ways to grow your business and we
         are here to do whatever it takes to help you nail each one of them.
       </p>
