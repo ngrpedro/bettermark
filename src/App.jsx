@@ -15,9 +15,9 @@ import Arrow from './assets/arrow';
 
 function App() {
   return (
-    <div className="text-white w-full antialiased">
+    <div className="text-white w-full antialiased bg-[#011238]">
       <NavBar />
-      <div className="bg-[#011238]">
+      <div className="">
         <Header />
         <Cards />
       </div>
