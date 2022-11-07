@@ -6,7 +6,8 @@ import text from "../assets/texte.svg";
 const Images = () => {
   return (
     <div className="padding-container py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 reverse gap-5 items-center justify-center border-b border-gray-700 pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 reverse gap-5 items-center 
+              justify-center border-b border-gray-700 pb-20">
         <div className="space-y-5 max-w-[33rem] m-auto ">
           <p className="text-lg font-quatt font-bold">
             The competition is high
