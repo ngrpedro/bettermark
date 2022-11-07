@@ -7,11 +7,12 @@ const Header = () => {
     <div className="padding-container pb-20 pt-10 md:pt-20 md:pb-10 flex flex-col text-center items-center justify-center gap-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center justify-center">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-left font-quatt">
-          Do you want to <span className="text-[#AB72D8]"> grow your business </span> while stop wasting
-          money <span className="text-[#AB72D8]"> with marketing </span> that doesnt work?
+          Do you want to <span className="text-[#AB72D8]"> grow your business </span> while {""}
+          <span className="text-[#AB72D8]">stop wasting</span> {""}
+          money with<span className="text-[#AB72D8]"> marketing </span> that doesnt work?
         </h1>
         <div className="m-auto ">
-          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-xl"/>
+          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-xl" />
         </div>
       </div>
       <p className="font-normal text-lg leading-[19px] max-w-[38rem] mt-8">
