@@ -15,7 +15,7 @@ const Conversation = () => {
                             <h1 className="block text-5xl md:text-5xl font-quatt">
                                 Increasing your sales is always a challenge.
                             </h1>
-                            <div className='p-5  border-l border-purple-200'>
+                            <div className='p-5  border-l border-purple-200 space-y-8'>
                                 <div className='flex gap-4 -ml-[37px]'>
 
                                     <div className="">

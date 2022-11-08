@@ -10,7 +10,7 @@ const Promises = () => {
             Getting things done does’t move the needle in your business.
           </h1>
           <div className="space-y-5 md:col-span-2">
-            <p className="text-lg decoration-3 md:text-2xl underline underline-offset-4 text-[#AB72D8]">
+            <p className="text-lg decoration-3 md:text-2xl text-[#AB72D8]">
               Getting things done that matter, does.
             </p>
 
