@@ -8,30 +8,15 @@ const Conversation = () => {
     return (
         <div className="bg-[#eaeaea]">
             <div className="padding-container relative py-10 gap-10 text-black">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20">
                     <div className='space-y-16'>
                         <div className='space-y-8'>
-
-                            <h1 className="block text-5xl md:text-5xl font-quatt">
-                                Increasing your sales is always a challenge.
+                            <h1 className="block text-3xl md:text-3xl font-quatt">
+                                Increasing your sales is always a challenge and although everyone brags about how good online marketing is, its
+                                just very hard to take the best of this opportunity if you are not
+                                an expert.
                             </h1>
                             <div className='p-5  border-l border-purple-200 space-y-8'>
-                                <div className='flex gap-4 -ml-[37px]'>
-
-                                    <div className="">
-                                        <PenaWhite />
-                                    </div>
-
-                                    <div className=' pl-5 space-y-2'>
-                                        <h1 className='font-bold text-xl'>The competition is high</h1>
-                                        <p className="text-lg">
-                                            And although everyone brags about how good online marketing is, its
-                                            just very hard to take the best of this opportunity if you are not
-                                            an expert.
-                                        </p>
-                                    </div>
-                                </div>
-
                                 <div className='flex gap-4 -ml-[37px]'>
                                     <div className="">
                                         <PenaWhite />
@@ -49,9 +34,7 @@ const Conversation = () => {
 
                     </div>
                     <div>
-                        <div className="space-y-10 max-w-[33rem] m-auto text-justify text-black p-5 border-l border-purple-200">
-
-
+                        <div className="space-y-10 m-auto text-justify text-black p-5 border-l border-purple-200">
                             <div className='flex gap-4 -ml-[37px]'>
                                 <div className="">
                                     <PenaWhite />
@@ -78,11 +61,8 @@ const Conversation = () => {
                                     </p>
                                 </div>
                             </div>
-
-
                         </div>
                         <div className='w-full flex mt-10'>
-
                             <Button
                                 as={'a'}
                                 href="https://calendly.com/bettermarketingau/30min?month=2022-11"

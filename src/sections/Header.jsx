@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-import mainimage from "../assets/mainimage.svg";
+import maincomputer from "../assets/maincomputer.svg";
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
           money with<span className="text-[#AB72D8]"> marketing </span> that doesnt work?
         </h1>
         <div className="m-auto ">
-          <img src={mainimage} alt="" className="max-w-[280px] md:max-w-[23rem]" />
+          <img src={maincomputer} alt="" className="max-w-[280px] md:max-w-[23rem] mt-16 lg:mt-0" />
         </div>
       </div>
       <p className="font-normal text-2xl leading-[23px] max-w-[52rem] mt-8">

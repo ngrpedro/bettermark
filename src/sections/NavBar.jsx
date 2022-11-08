@@ -28,11 +28,8 @@ const NavBar = () => {
       <a href="#">
         <img src={newLogo} alt="" className="w-24" />
       </a>
-      <ul className="hidden md:flex items-center justify-center gap-4 text-[#011238]">
-        <li>Menu</li>
-        <li>Menu</li>
-        <li>Menu</li>
-        <li>Menu</li>
+      <ul className="hidden md:flex items-center justify-center gap-4 text-[#011238] font-bold text-lg">
+        <li>Home</li>
       </ul>
       <div className="flex md:hidden">
         <IconButton
@@ -41,7 +38,7 @@ const NavBar = () => {
           bg={"transparent"}
           _hover={{ bg: "transparent" }}
           _active={{ bg: "transparent" }}
-          icon={<HamburgerIcon color={'black'}/>}
+          icon={<HamburgerIcon color={'black'} />}
         />
       </div>
       <Drawer
@@ -57,10 +54,7 @@ const NavBar = () => {
 
           <DrawerBody>
             <ul className="">
-              <li>Menu</li>
-              <li>Menu</li>
-              <li>Menu</li>
-              <li>Menu</li>
+              <li>Home</li>
             </ul>
           </DrawerBody>
 

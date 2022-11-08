@@ -45,7 +45,7 @@ const Cards = () => {
         </div>
 
         <p>
-          Give more value and your customer will spend more with yo and more buy
+          Give more value and your customer will spend more with you and more buy
           more times
         </p>
       </div>

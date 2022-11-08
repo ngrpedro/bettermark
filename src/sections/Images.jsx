@@ -6,8 +6,8 @@ const Images = () => {
   return (
     <div className="padding-container py-20 bg-[#011238]">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center">
-        <div className="space-y-7 text-justify max-w-[33rem] m-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-0 items-center justify-center">
+        <div className="space-y-7 text-justify max-w-[33rem] m-auto md:m-0 ">
           <h1 className="text-4xl font-bold font-quatt">That is why...</h1>
           <p>
             We want to eliminate digital marketing completely from your to do
