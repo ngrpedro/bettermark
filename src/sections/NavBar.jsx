@@ -12,7 +12,7 @@ import {
   useDisclosure
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import logo from '../assets/Logo.png';
+import newLogo from '../assets/newLogo.svg';
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -26,7 +26,7 @@ const NavBar = () => {
       {" "}
       {/* bg-gradient-to-b from-[#00081b] via-[#00081bb4] */}
       <a href="#">
-        <img src={logo} alt="" className="w-24" />
+        <img src={newLogo} alt="" className="w-24" />
       </a>
       <ul className="hidden md:flex items-center justify-center gap-4 text-[#011238]">
         <li>Menu</li>

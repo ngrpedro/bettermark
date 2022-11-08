@@ -121,7 +121,10 @@ const Steps = () => {
         <div className="md:col-span-3 flex items-center justify-center">
 
           <Button
-          mt="5"
+            as={'a'}
+            href="https://calendly.com/bettermarketingau/30min?month=2022-11"
+            target={"_black"}
+            mt="5"
             bg={"#FF6E4F"}
             _hover={{ opacity: 0.8 }}
             _active={{ opacity: 0.8 }}

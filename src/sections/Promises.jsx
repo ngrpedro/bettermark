@@ -23,6 +23,9 @@ const Promises = () => {
             </p>
 
             <Button
+              as={'a'}
+              href="https://calendly.com/bettermarketingau/30min?month=2022-11"
+              target={"_black"}
               bg={"#FF6E4F"}
               _hover={{ opacity: 0.8 }}
               _active={{ opacity: 0.8 }}
