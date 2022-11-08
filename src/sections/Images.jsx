@@ -1,7 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-
-import text from "../assets/texte.svg";
+import mainimage from "../assets/mainimage.svg";
 
 const Images = () => {
   return (
@@ -34,7 +33,7 @@ const Images = () => {
           </Button>
         </div>
         <div className="max-w-[20rem] m-auto">
-          <img src={text} alt="" />
+          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-xl" />
         </div>
       </div>
     </div>

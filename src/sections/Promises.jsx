@@ -6,17 +6,20 @@ const Promises = () => {
     <div className="padding-container py-20 text-center space-y-10 border-t border-gray-800">
       <div className="grid grid-cols-1 md:grid-cols-2 text-center gap-20">
         <div className="space-y-2">
-          <h1 className="text-lg md:text-xl">
+          <h1 className="text-lg md:text-xl ">
             Getting things done does’t move the needle in your business.
           </h1>
           <div className="space-y-5 md:col-span-2">
-            <p className="text-lg decoration-3 md:text-2xl underline underline-offset-4">
-              Getting things done that matter, does.{" "}
+            <p className="text-lg decoration-3 md:text-2xl underline underline-offset-4 text-[#AB72D8]">
+              Getting things done that matter, does.
             </p>
 
-            <p className="text-2xl md:text-4xl py-5 font-quatt">
-              ACTION is what moves your brand to the next
-              level. Take de first step and schedule your call TODAY.
+            <p className="text-2xl md:text-4xl py-5">
+              <span className="text-[#AB72D8]">ACTION {" "}</span>
+              is what moves your brand to the next
+              level. Take de first step and schedule your call
+              <span className="text-[#AB72D8]"> {" "}TODAY</span>
+              .
             </p>
 
             <Button
