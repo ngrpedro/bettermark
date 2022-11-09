@@ -59,9 +59,13 @@ const NavBar = () => {
           <DrawerHeader>Better Marketing</DrawerHeader>
 
           <DrawerBody>
-            <ul className="">
-              <li>Home</li>
-              <li>Contact Us</li>
+            <ul className="flex flex-col gap-2">
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/ContactUs">
+                <li>Contact Us</li>
+              </Link>
             </ul>
           </DrawerBody>
 

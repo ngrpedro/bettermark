@@ -10,15 +10,14 @@ const ContactUs = () => {
 
                 <div className='rounded-lg w-full bg-[#011238] p-8 flex flex-col sm:flex-row items-center 
                                 justify-between gap-10'>
-                    <p className='font-bold text-4xl md:text-4xl lg:text-left font-quatt text-white
-                                    max-w-lg'>
+                    <p className='font-bold text-4xl md:text-4xl lg:text-left 
+                                font-quatt text-white  max-w-lg'>
                         Send us a message and it will be a pleasure contact you.
                     </p>
                     <img src={message} alt="" className='w-28' />
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 border border-gray-200 rounded-lg'>
-
                     <div className='bg-[#d4dbe9] rounded-t-lg md:rounded-bl-lg md:rounded-tr-none space-y-5  p-10'>
                         <h1 className='text-3xl font-bold'>
                             Get in touch
@@ -83,7 +82,6 @@ const ContactUs = () => {
                             Submit
                         </Button>
                     </div>
-
                 </div>
             </div>
         </div>
