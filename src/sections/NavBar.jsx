@@ -33,6 +33,9 @@ const NavBar = () => {
         <Link to="/">
           <li>Home</li>
         </Link>
+        <Link to="/Services">
+          <li>Services</li>
+        </Link>
         <Link to="/ContactUs">
           <li>Contact Us</li>
         </Link>
@@ -62,6 +65,9 @@ const NavBar = () => {
             <ul className="flex flex-col gap-2">
               <Link to="/">
                 <li>Home</li>
+              </Link>
+              <Link to="/Services">
+                <li>Services</li>
               </Link>
               <Link to="/ContactUs">
                 <li>Contact Us</li>
