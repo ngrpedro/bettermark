@@ -34,10 +34,10 @@ const NavBar = () => {
       <ul className="hidden md:flex items-center justify-center gap-8 text-[#011238] font-bold text-lg">
         <Link to="/">
           <li>Home</li>
-        </Link>
+        </Link>{/* 
         <Link to="/ContactUs">
           <li>Contact Us</li>
-        </Link>
+        </Link> */}
       </ul>
       <div className="flex md:hidden">
         <IconButton
@@ -62,8 +62,8 @@ const NavBar = () => {
 
           <DrawerBody>
             <ul className="">
-              <li>Home</li>
-              <li>Contact Us</li>
+              <li>Home</li>{/* 
+              <li>Contact Us</li> */}
             </ul>
           </DrawerBody>
 
