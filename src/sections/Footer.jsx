@@ -3,10 +3,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-blueGray-200 pt-8 pb-6 bg-white text-black shadow-2xl shadow-white">
-      <div className="container mx-auto px-4">
+    <footer className="padding-container relative bg-blueGray-200 pt-8 pb-6 bg-white 
+          text-black shadow-2xl shadow-white border-t border-gray-200">
+      <div className="mx-auto">
         <div className="flex flex-wrap text-left lg:text-left">
-          <div className="w-full lg:w-6/12 px-4">
+          <div className="w-full lg:w-6/12">
             <h4 className="text-3xl fonat-semibold text-blueGray-700">
               Let's keep in touch!
             </h4>
@@ -25,9 +26,9 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="w-full lg:w-6/12 px-4">
+          <div className="w-full lg:w-6/12">
             <div className="flex items-top mb-6">
-              <div className="w-full px-4 ml-auto">
+              <div className="w-full ml-auto">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Useful Links
                 </span>

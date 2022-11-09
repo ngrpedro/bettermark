@@ -28,7 +28,6 @@ const Home = () => {
                 </h1>
             </div>
             <Promises />
-            <Footer />
         </div>
     )
 }
