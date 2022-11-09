@@ -12,6 +12,7 @@ import {
   useDisclosure
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import newLogo from '../assets/newLogo.svg';
 
 const NavBar = () => {
@@ -28,8 +29,13 @@ const NavBar = () => {
       <a href="#">
         <img src={newLogo} alt="" className="w-24" />
       </a>
-      <ul className="hidden md:flex items-center justify-center gap-4 text-[#011238] font-bold text-lg">
-        <li>Home</li>
+      <ul className="hidden md:flex items-center justify-center gap-8 text-[#011238] font-bold text-lg">
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/ContactUs">
+          <li>Contact Us</li>
+        </Link>
       </ul>
       <div className="flex md:hidden">
         <IconButton
@@ -55,6 +61,7 @@ const NavBar = () => {
           <DrawerBody>
             <ul className="">
               <li>Home</li>
+              <li>Contact Us</li>
             </ul>
           </DrawerBody>
 

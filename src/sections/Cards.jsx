@@ -39,7 +39,7 @@ const Cards = () => {
       >
         <div className="flex flex-col items-center gap-1">
           <img src={money} alt="" className="w-[3rem]" />
-          <p className="text-2xl font-bold " p>
+          <p className="text-2xl font-bold">
             Profits
           </p>
         </div>
