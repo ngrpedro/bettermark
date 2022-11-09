@@ -1,10 +1,10 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-import maincomputer from "../assets/maincomputer.svg";
+import mainimage_desk from "../assets/mainimage_desk.svg";
 
 const Header = () => {
   return (
-    <div className="padding-container pb-20 pt-10 md:pt-20 md:pb-10 flex flex-col text-center items-center justify-center gap-8">
+    <div className="padding-container pb-20 pt-10 md:pt-10 md:pb-10 flex flex-col text-center items-center justify-center gap-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-0 items-center justify-center">
         <h1 className="md:col-span-2 font-bold text-4xl md:text-6xl lg:text-left font-quatt">
           Do you want to <span className="text-[#AB72D8]"> grow your business </span> while {""}
@@ -12,10 +12,10 @@ const Header = () => {
           money with<span className="text-[#AB72D8]"> marketing </span> that doesnt work?
         </h1>
         <div className="m-auto ">
-          <img src={maincomputer} alt="" className="max-w-[280px] md:max-w-[23rem] mt-16 lg:mt-0" />
+          <img src={mainimage_desk} alt="" className="max-w-[348px] md:max-w-[29rem] mt-16 lg:mt-0" />
         </div>
       </div>
-      <p className="font-normal text-2xl leading-[23px] max-w-[52rem] mt-8">
+      <p className="font-normal text-2xl leading-[23px] max-w-[52rem] mt-2">
         We believe that there are only three ways to grow your business and we
         are here to do whatever it takes to help you nail each one of them.
       </p>

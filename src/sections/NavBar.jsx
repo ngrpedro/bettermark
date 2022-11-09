@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import newLogo from '../assets/newLogo.svg';
+import logo from '../assets/logo_full.png';
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,7 +27,9 @@ const NavBar = () => {
       {" "}
       {/* bg-gradient-to-b from-[#00081b] via-[#00081bb4] */}
       <a href="#">
-        <img src={newLogo} alt="" className="w-24" />
+        <Link to="/">
+          <img src={logo} alt="" className="w-24" />
+        </Link>
       </a>
       <ul className="hidden md:flex items-center justify-center gap-8 text-[#011238] font-bold text-lg">
         <Link to="/">
