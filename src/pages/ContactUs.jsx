@@ -1,20 +1,25 @@
 import { At, Phone } from 'phosphor-react'
 import React from 'react'
 import { Button } from '@chakra-ui/react';
+import message from "../assets/message.svg"
 
 const ContactUs = () => {
     return (
         <div>
-            <div className='padding-container pb-20 pt-10 md:pt-20 md:pb-10 space-y-10'>
-                <div className='rounded-lg w-full bg-[#011238] p-8 grid grid-cols-1 md:grid-cols-2'>
-                    <p className='text-white text-4xl'>
+            <div className='padding-container pb-20 pt-10 md:pt-10 md:pb-10 space-y-10'>
+
+                <div className='rounded-lg w-full bg-[#011238] p-8 flex flex-col sm:flex-row items-center 
+                                justify-between gap-10'>
+                    <p className='font-bold text-4xl md:text-4xl lg:text-left font-quatt text-white
+                                    max-w-lg'>
                         Send us a message and it will be a pleasure contact you.
                     </p>
+                    <img src={message} alt="" className='w-28' />
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 border border-gray-200 rounded-lg'>
 
-                    <div className='bg-gray-100 rounded-l-lg space-y-5  p-10'>
+                    <div className='bg-[#d4dbe9] rounded-t-lg md:rounded-bl-lg md:rounded-tr-none space-y-5  p-10'>
                         <h1 className='text-3xl font-bold'>
                             Get in touch
                         </h1>

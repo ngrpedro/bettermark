@@ -24,20 +24,18 @@ const NavBar = () => {
       className=" to-transparent bg-white z-[200]
     flex items-center justify-between py-4 padding-container sticky top-0 shadow-lg"
     >
-      {" "}
-      {/* bg-gradient-to-b from-[#00081b] via-[#00081bb4] */}
-      <a href="#">
+      <div>
         <Link to="/">
           <img src={logo} alt="" className="w-24" />
         </Link>
-      </a>
+      </div>
       <ul className="hidden md:flex items-center justify-center gap-8 text-[#011238] font-bold text-lg">
         <Link to="/">
           <li>Home</li>
-        </Link>{/* 
+        </Link>
         <Link to="/ContactUs">
           <li>Contact Us</li>
-        </Link> */}
+        </Link>
       </ul>
       <div className="flex md:hidden">
         <IconButton
@@ -62,8 +60,8 @@ const NavBar = () => {
 
           <DrawerBody>
             <ul className="">
-              <li>Home</li>{/* 
-              <li>Contact Us</li> */}
+              <li>Home</li>
+              <li>Contact Us</li>
             </ul>
           </DrawerBody>
 
