@@ -6,7 +6,11 @@ const ContactUs = () => {
     return (
         <div>
             <div className='padding-container pb-20 pt-10 md:pt-20 md:pb-10 space-y-10'>
-                <div className='bg-gray-300 rounded-lg w-full h-40'></div>
+                <div className='rounded-lg w-full bg-[#011238] p-8 grid grid-cols-1 md:grid-cols-2'>
+                    <p className='text-white text-4xl'>
+                        Send us a message and it will be a pleasure contact you.
+                    </p>
+                </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 border border-gray-200 rounded-lg'>
 
