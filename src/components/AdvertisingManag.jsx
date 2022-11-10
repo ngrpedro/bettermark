@@ -30,7 +30,7 @@ const AdvertisingManag = () => {
                     </div>
 
                     <p className='text-lg font-bold'>Keyword research and ad groups</p>
-                    <p className='text-md  max-w-6xl'>
+                    <p className='text-md  max-w-md'>
                         We will do comprehensive keyword research, ad group creation and bid management for your campaign.
                         In addition, we can prioritise keywords based on your inputs.
                     </p>

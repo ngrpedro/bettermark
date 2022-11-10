@@ -8,6 +8,7 @@ const SEOService = () => {
             <h1 className='md:col-span-2 py-4 text-xl font-bold'>
                 Our Process:
             </h1>
+
             <div className='flex flex-col items-start justify-start gap-2 md:border-r border-gray-300'>
                 <div className='p-2 rounded-md bg-[#e8d7ff]'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
@@ -29,7 +30,7 @@ const SEOService = () => {
                 </div>
 
                 <p className='text-lg font-bold'>Keyword Research</p>
-                <p className='text-md max-w-sm'>
+                <p className='text-md max-w-md'>
                     We research the best keywords based on the industry
                     vertical and physical location to bring the most effective results.
                     Target keywords are approved by mutual consensus.
