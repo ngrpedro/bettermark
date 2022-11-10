@@ -36,6 +36,9 @@ const NavBar = () => {
         <Link to="/Services">
           <li>Services</li>
         </Link>
+        <Link to="/Results">
+          <li>Results</li>
+        </Link>
         <Link to="/ContactUs">
           <li>Contact Us</li>
         </Link>
@@ -68,6 +71,9 @@ const NavBar = () => {
               </Link>
               <Link to="/Services">
                 <li>Services</li>
+              </Link>
+              <Link to="/Results">
+                <li>Results</li>
               </Link>
               <Link to="/ContactUs">
                 <li>Contact Us</li>

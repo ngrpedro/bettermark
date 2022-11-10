@@ -2,7 +2,7 @@ import Cards from "../sections/Cards";
 import Footer from "../sections/Footer";
 import Header from "../sections/Header";
 import Images from "../sections/Images";
-import NavBar from "../sections/NavBar";
+import NavBar from "../components/NavBar";
 import Promises from "../sections/Promises";
 import Steps from "../sections/Steps";
 import Texts from "../sections/Texts";
