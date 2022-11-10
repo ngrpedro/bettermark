@@ -11,7 +11,7 @@ const Services = () => {
                     <h1 className='text-5xl font-quatt  text-white'>Services and Process</h1>
                 </div>
             </div>
-            <div className='mx-6 md:mx-24 bg-white p-8 rounded-xl -mt-16'>
+            <div className='mx-6 md:mx-24 bg-white py-8 px-2 md:p-8 rounded-xl -mt-16'>
                 <Tabs>
                     <TabList className='flex !flex-col sm:!flex-row'>
                         <Tab _selected={{
