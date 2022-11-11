@@ -27,11 +27,12 @@ const Header = () => {
         _hover={{ opacity: 0.8 }}
         _active={{ opacity: 0.8 }}
         rounded={"full"}
-        py="12px"
+        py="24px"
         px="40px"
         fontWeight={"bold"}
-        fontSize="16px"
+        fontSize="20px"
         lineHeight={"19pxp"}
+        textTransform={"uppercase"}
       >
         Schedule a call
       </Button>

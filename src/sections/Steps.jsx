@@ -133,6 +133,7 @@ const Steps = () => {
             px="40px"
             fontWeight={"bold"}
             fontSize="16px"
+            textTransform={"uppercase"}
             lineHeight={"19pxp"}
           >
             Schedule a call

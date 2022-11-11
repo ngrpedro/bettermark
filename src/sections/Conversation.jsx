@@ -75,8 +75,9 @@ const Conversation = () => {
                                 px="42px"
                                 m={"auto"}
                                 fontWeight={"bold"}
-                                fontSize="18px"
+                                fontSize="16px"
                                 lineHeight={"19px"}
+                                textTransform={"uppercase"}
                                 color={"white"}
                             >
                                 Schedule a call

@@ -29,6 +29,7 @@ const Images = () => {
             py="12px"
             px="40px"
             fontWeight={"bold"}
+            textTransform={"uppercase"}
             fontSize="16px"
             lineHeight={"19pxp"}
           >
