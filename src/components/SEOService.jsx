@@ -4,12 +4,11 @@ import { CalendarCheck, CheckSquareOffset, Textbox } from 'phosphor-react'
 
 const SEOService = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8'>
-            <h1 className='md:col-span-2 py-4 text-xl font-bold'>
-                Our Process:
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <h1 className='md:col-span-2 text-2xl font-bold'>
+                Process
             </h1>
-
-            <div className='flex flex-col items-start justify-start gap-2 md:border-r border-gray-300'>
+            <div className='flex flex-col items-start justify-start gap-2 text-justify md:border-r border-gray-300'>
                 <div className='p-2 rounded-md bg-[#e8d7ff]'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                         className="w-6 h-6">
@@ -18,13 +17,13 @@ const SEOService = () => {
                 </div>
 
                 <p className='text-lg font-bold'>Site Assessment and Intake</p>
-                <p className='text-md max-w-sm'>
+                <p className='text-md max-w-md'>
                     We audit your website, online presence and gather
                     information about your target audience and goals
                 </p>
             </div>
 
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='flex flex-col items-start justify-start gap-2 text-justify'>
                 <div className='p-2 rounded-md bg-[#d8f9cc]'>
                     <Textbox size={24} />
                 </div>
@@ -37,7 +36,7 @@ const SEOService = () => {
                 </p>
             </div>
 
-            <div className='md:col-span-2 flex flex-col items-start justify-start gap-2 md:mb-8'>
+            <div className='md:col-span-2 flex flex-col items-start justify-start gap-2 text-justify md:mb-8'>
                 <div className='p-2 rounded-md bg-[#fff6d7]'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                         className="w-6 h-6">
@@ -47,7 +46,7 @@ const SEOService = () => {
                 </div>
 
                 <p className='text-lg font-bold'>Content and On Page Optimisation:</p>
-                <p className='text-md max-w-6xl'>
+                <p className='text-md max-w-md md:max-w-6xl'>
                     From our site assessment and keyword research, we implement high-quality content
                     optimisation to your site to engage visitors. Extensive on page optimisation includes Google tools integration,
                     plagiarism check, page load time & mobile friendly check and implementation of page title, meta description, header
@@ -56,25 +55,25 @@ const SEOService = () => {
                 </p>
             </div>
 
-            <div className='flex flex-col items-start justify-start gap-2 md:border-r border-gray-300'>
+            <div className='flex flex-col items-start justify-start gap-2 text-justify md:border-r border-gray-300'>
                 <div className='p-2 rounded-md bg-[#E3E9FF]'>
                     <CalendarCheck size={24} />
                 </div>
 
                 <p className='text-lg font-bold'>Site Assessment and Intake</p>
-                <p className='text-md max-w-sm'>
+                <p className='text-md max-w-md'>
                     We audit your website, online presence and gather
                     information about your target audience and goals
                 </p>
             </div>
 
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='flex flex-col items-start justify-start gap-2 text-justify'>
                 <div className='p-2 rounded-md bg-[#FFE3F9]'>
                     <CheckSquareOffset size={24} />
                 </div>
 
                 <p className='text-lg font-bold'>Site Assessment and Intake</p>
-                <p className='text-md max-w-sm'>
+                <p className='text-md max-w-md'>
                     We audit your website, online presence and gather
                     information about your target audience and goals
                 </p>

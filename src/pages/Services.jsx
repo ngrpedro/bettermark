@@ -19,13 +19,15 @@ const Services = () => {
                             fontWeight: "700",
                             border: "#011238",
                             borderBottom: "2px"
-                        }}>Local SEO and national SEO</Tab>
+                        }}>Paid advertising management</Tab>
+
                         <Tab _selected={{
                             color: "#011238",
                             fontWeight: "700",
                             border: "#011238",
                             borderBottom: "2px"
-                        }}>Paid advertising management</Tab>
+                        }}>Local SEO and national SEO</Tab>
+
                         <Tab _selected={{
                             color: "#011238",
                             fontWeight: "700",
@@ -36,10 +38,10 @@ const Services = () => {
 
                     <TabPanels>
                         <TabPanel>
-                            <SEOService />
+                            <AdvertisingManag />
                         </TabPanel>
                         <TabPanel>
-                            <AdvertisingManag />
+                            <SEOService />
                         </TabPanel>
                         <TabPanel>
                             <p>WebSite - Development and Design</p>

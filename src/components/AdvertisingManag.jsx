@@ -4,12 +4,12 @@ import { FileDoc, Info, ProjectorScreenChart, Textbox } from 'phosphor-react';
 
 const AdvertisingManag = () => {
     return (
-        <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8'>
-                <h1 className='md:col-span-2 py-4 text-xl font-bold'>
-                    Our Process:
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+            <div className='space-y-8 border-b md:border-b-0 md:border-r border-gray-200 pr-10 pb-10'>
+                <h1 className='text-2xl font-bold'>
+                    Process
                 </h1>
-                <div className='flex flex-col items-start justify-start gap-2 md:border-r border-gray-300'>
+                <div className='flex flex-col items-start justify-start gap-2 max-w-[27rem] text-justify'>
                     <div className='p-2 rounded-md bg-[#e8d7ff]'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                             className="w-6 h-6">
@@ -18,31 +18,31 @@ const AdvertisingManag = () => {
                     </div>
 
                     <p className='text-lg font-bold'>Site Assessment and Intake</p>
-                    <p className='text-md max-w-sm'>
+                    <p className='text-md'>
                         We audit your website, online presence and gather
                         information about your target audience and goals
                     </p>
                 </div>
 
-                <div className='flex flex-col items-start justify-start gap-2'>
+                <div className='flex flex-col items-start justify-start gap-2 max-w-[27rem] text-justify'>
                     <div className='p-2 rounded-md bg-[#d8f9cc]'>
                         <Textbox size={24} />
                     </div>
 
                     <p className='text-lg font-bold'>Keyword research and ad groups</p>
-                    <p className='text-md  max-w-md'>
+                    <p className='text-md'>
                         We will do comprehensive keyword research, ad group creation and bid management for your campaign.
                         In addition, we can prioritise keywords based on your inputs.
                     </p>
                 </div>
 
-                <div className='md:col-span-2 flex flex-col items-start justify-start gap-2 md:mb-8'>
+                <div className='flex flex-col items-start justify-start gap-2 max-w-[27rem] text-justify'>
                     <div className='p-2 rounded-md bg-[#fff6d7]'>
                         <ProjectorScreenChart size={24} />
                     </div>
 
                     <p className='text-lg font-bold'>Creating compelling ads</p>
-                    <p className='text-md max-w-2xl'>
+                    <p className='text-md'>
                         Based on keyword research, our team of PPC Advertising strategists will create
                         relevant ads targeting the keywords that are present in the tightly themed ad groups.
                         <br />
@@ -51,36 +51,34 @@ const AdvertisingManag = () => {
                     </p>
                 </div>
 
-                <div className='flex flex-col items-start justify-start gap-2 md:border-r border-gray-300'>
+                <div className='flex flex-col items-start justify-start gap-2 max-w-[27rem] text-justify'>
                     <div className='p-2 rounded-md bg-[#E3E9FF]'>
                         <FileDoc size={24} />
                     </div>
 
                     <p className='text-lg font-bold'>Keyword research and ad groups</p>
-                    <p className='text-md max-w-sm'>
+                    <p className='text-md'>
                         We will do comprehensive keyword research, ad group creation and bid management for your campaign.
                         In addition, we can prioritise keywords based on your inputs.
                     </p>
                 </div>
 
-                <div className='flex flex-col items-start justify-start gap-2'>
+                <div className='flex flex-col items-start justify-start gap-2 max-w-[27rem] text-justify'>
                     <div className='p-2 rounded-md bg-[#FFE3F9]'>
                         <Info size={24} />
                     </div>
 
                     <p className='text-lg font-bold'>Reports</p>
-                    <p className='text-md max-w-sm'>
+                    <p className='text-md'>
                         Weekly and Monthly PPC performance reports are sent out automatically to
                         keep you informed about the results we’ve achieved.
                     </p>
                 </div>
             </div>
 
-            <hr className='my-10 md:my-20' />
-
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-start'>
-                <h1 className='md:col-span-2 text-2xl font-bold'>
-                    Services:
+            <div className='space-y-8'>
+                <h1 className='text-2xl font-bold'>
+                    Services
                 </h1>
                 <Accordion defaultIndex={[0]} allowMultiple>
                     <AccordionItem>
