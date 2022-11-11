@@ -42,7 +42,7 @@ const Conversation = () => {
                                 <div className=' pl-5 space-y-2'>
                                     <h1 className='font-bold text-xl'>Not only that</h1>
                                     <p className="text-lg">
-                                        - how in the world are you supposed to keep it up with
+                                        how in the world are you supposed to keep it up with
                                         every new trend, Google Ads feature or new platforms coming up?
                                     </p>
                                 </div>

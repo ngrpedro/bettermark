@@ -32,7 +32,7 @@ const NavBar = () => {
       <ul className="hidden md:flex items-center justify-center gap-8 text-[#011238] font-bold text-lg">
         <Link to="/">
           <li>Home</li>
-        </Link>
+        </Link>{/* 
         <Link to="/Services">
           <li>Services</li>
         </Link>
@@ -41,7 +41,7 @@ const NavBar = () => {
         </Link>
         <Link to="/ContactUs">
           <li>Contact Us</li>
-        </Link>
+        </Link> */}
       </ul>
       <div className="flex md:hidden">
         <IconButton
@@ -68,7 +68,7 @@ const NavBar = () => {
             <ul className="flex flex-col gap-2">
               <Link to="/">
                 <li>Home</li>
-              </Link>
+              </Link>{/* 
               <Link to="/Services">
                 <li>Services</li>
               </Link>
@@ -77,7 +77,7 @@ const NavBar = () => {
               </Link>
               <Link to="/ContactUs">
                 <li>Contact Us</li>
-              </Link>
+              </Link> */}
             </ul>
           </DrawerBody>
 
