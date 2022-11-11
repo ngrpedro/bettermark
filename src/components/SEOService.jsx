@@ -8,7 +8,7 @@ const SEOService = () => {
             <h1 className='md:col-span-2 text-2xl font-bold'>
                 Process
             </h1>
-            <div className='flex flex-col items-start justify-start gap-2 text-justify md:border-r border-gray-300'>
+            <div className='flex flex-col items-start justify-start gap-2 text-justify md:border-r border-gray-300 md:pr-8'>
                 <div className='p-2 rounded-md bg-[#e8d7ff]'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                         className="w-6 h-6">
@@ -55,7 +55,7 @@ const SEOService = () => {
                 </p>
             </div>
 
-            <div className='flex flex-col items-start justify-start gap-2 text-justify md:border-r border-gray-300'>
+            <div className='flex flex-col items-start justify-start gap-2 text-justify md:border-r border-gray-300 md:pr-8'>
                 <div className='p-2 rounded-md bg-[#E3E9FF]'>
                     <CalendarCheck size={24} />
                 </div>

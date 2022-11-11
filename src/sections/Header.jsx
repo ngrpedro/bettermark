@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-import mainimage_desk from "../assets/mainimage_desk.svg";
+import mainimage_desk from "../assets/mainimage.png";
 
 const Header = () => {
   return (
@@ -11,8 +11,8 @@ const Header = () => {
           <span className="text-[#AB72D8]">stop wasting</span> {""}
           money with<span className="text-[#AB72D8]"> marketing </span> that doesnt work?
         </h1>
-        <div className="m-auto relative">
-          <img src={mainimage_desk} alt="" className="max-w-[348px] md:max-w-[29rem] mt-16 lg:mt-0" />
+        <div className="m-auto max-w-[348px] md:max-w-[29rem] ">
+          <img src={mainimage_desk} alt="" className="mt-16 lg:mt-0" />
         </div>
       </div>
       <p className="font-normal text-2xl leading-[23px] max-w-[52rem] mt-2">
