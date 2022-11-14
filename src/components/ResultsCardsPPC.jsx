@@ -45,8 +45,6 @@ const ResultsCardsPPC = () => {
                 </div>
             </div>
 
-
-
             <div className='border border-gray-200 rounded-lg flex flex-col items-start 
                                                 hover:shadow-md transition-all group'>
                 <div className='w-full relative'>
@@ -112,7 +110,6 @@ const ResultsCardsPPC = () => {
                     </a>
                 </div>
             </div>
-
 
             <div className='border border-gray-200 rounded-lg flex flex-col items-start 
                                                 hover:shadow-md transition-all group'>
