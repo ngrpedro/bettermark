@@ -38,7 +38,7 @@ const Results = () => {
                         <TabPanel>
                             <ResultsCardsPPC />
                         </TabPanel>
-                        <TabPanel className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5'>
+                        <TabPanel >
                             <ResultsCardsSEO />
                         </TabPanel>
                     </TabPanels>

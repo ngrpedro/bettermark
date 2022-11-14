@@ -11,7 +11,7 @@ import pdf4 from '../assets/pdf/PPC-real_estate_industry.pdf'
 
 const ResultsCardsPPC = () => {
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5'>
             <div className='border border-gray-200 rounded-lg flex flex-col items-start 
                                                 hover:shadow-md transition-all group'>
                 <div className='w-full relative'>
@@ -143,7 +143,6 @@ const ResultsCardsPPC = () => {
                     </a>
                 </div>
             </div>
-
         </div>
     )
 }
