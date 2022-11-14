@@ -24,24 +24,24 @@ const Promises = () => {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-        <div className="flex flex-col text-lg gap-4 items-start justify-start bg-[#ED64A6] p-4 rounded-lg h-32">
+        <div className="flex flex-col text-lg gap-4 items-start justify-start bg-[#ED64A6] p-4 rounded-lg h-32 hover:scale-105 transition-all">
           <p className="text-start">
             We want to build a relationship of years with you. So we are
             driven by your results.
           </p>
         </div>
-        <div className="flex flex-col text-lg gap-4 items-start justify-start  bg-[#667EEA] p-4 rounded-lg  h-32">
+        <div className="flex flex-col text-lg gap-4 items-start justify-start  bg-[#667EEA] p-4 rounded-lg  h-32 hover:scale-105 transition-all">
           <p className="text-start">
             We want to communicate the best. Our data will inform you, not
             confuse you.
           </p>
         </div>
-        <div className="flex flex-col text-lg gap-4 items-start justify-start  bg-[#9F7AEA] p-4 rounded-lg  h-32">
+        <div className="flex flex-col text-lg gap-4 items-start justify-start  bg-[#9F7AEA] p-4 rounded-lg  h-32 hover:scale-105 transition-all">
           <p className="text-start">
             There is no lock-in contract. We want you stay for the results.
           </p>
         </div>
-        <div className="flex flex-col text-lg gap-4 items-start justify-start  bg-[#3ABAB4] p-4 rounded-lg  h-32">
+        <div className="flex flex-col text-lg gap-4 items-start justify-start  bg-[#3ABAB4] p-4 rounded-lg  h-32 hover:scale-105 transition-all">
           <p className="text-start">
             And we are committed to make it work. If you are not happy, we
             don’t get paid.
