@@ -4,8 +4,8 @@ import { Button } from "@chakra-ui/react";
 import message from "../assets/message.svg";
 import axios from "axios";
 
-import { Client } from "@hubspot/api-client";
-const hubspotClient = new Client({ accessToken: 'pat-eu1-6ea4e478-56ec-4d2a-8965-98a588bbcfc6' });
+/* import { Client } from "@hubspot/api-client";
+const hubspotClient = new Client({ accessToken: 'pat-eu1-6ea4e478-56ec-4d2a-8965-98a588bbcfc6' }); */
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -14,7 +14,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [obs, setObs] = useState("");
 
-  const sendContact = async () => {
+/*   const sendContact = async () => {
     let contact = {
       firstname: name,
       website,
@@ -28,8 +28,9 @@ const ContactUs = () => {
       .catch((err) => {
         console.log(err);
       });
-  };
+  }; */
 
+  
   return (
     <div>
       <div className="padding-container pb-20 pt-10 md:pt-10 md:pb-10 space-y-10">
