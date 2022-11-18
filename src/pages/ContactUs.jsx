@@ -4,6 +4,7 @@ import { Button } from "@chakra-ui/react";
 import message from "../assets/message.svg";
 import axios from "axios";
 
+
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [website, setWebsite] = useState("");
@@ -22,7 +23,7 @@ const ContactUs = () => {
         "https://api.hubapi.com/crm/v3/objects/contacts",
         {
           headers: {
-            Authorization: `Bearer ${import.meta.env_VITE_TOKEN}`,
+            Authorization: `Bearer pat-eu1-6ea4e478-56ec-4d2a-8965-98a588bbcfc6` /* ${import.meta.env_VITE_TOKEN} */,
             "Content-Type": "application/json",
           },
         },
@@ -110,6 +111,8 @@ const ContactUs = () => {
             <input
               type="text"
               placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="p-4 border border-gray-300 w-full rounded-lg 
                                 placeholder:text-gray-400 placeholder:font-normal shadow-sm 
                                     hover:border hover:border-[#FF6E4F]"
