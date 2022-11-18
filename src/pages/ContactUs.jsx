@@ -2,10 +2,28 @@ import { At, Phone } from "phosphor-react";
 import React, { useState } from "react";
 import { Button } from "@chakra-ui/react";
 import message from "../assets/message.svg";
-import axios from "axios";
+import { gql, useQuery, useMutation } from "@apollo/client";
 
 /* import { Client } from "@hubspot/api-client";
 const hubspotClient = new Client({ accessToken: 'pat-eu1-6ea4e478-56ec-4d2a-8965-98a588bbcfc6' }); */
+
+const GET_ALL_CONTACTS = gql`
+  query {
+    contacts {
+      fullname
+      email
+    }
+  }
+`;
+
+const POST_CONTACT = gql`
+  mutation createContact($fullname: String!, $email: String!) {
+    createContact(data: { fullname: $fullname, email: $email }) {
+      email
+      fullname
+    }
+  }
+`;
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -14,7 +32,12 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [obs, setObs] = useState("");
 
-/*   const sendContact = async () => {
+  const { data } = useQuery(GET_ALL_CONTACTS);
+  console.log(data);
+
+  const [addContact] = useMutation(POST_CONTACT);
+
+  /*   const sendContact = async () => {
     let contact = {
       firstname: name,
       website,
@@ -30,7 +53,11 @@ const ContactUs = () => {
       });
   }; */
 
-  
+  const onSubmitEmail = () => {
+    console.log({ name, email });
+    addContact({ variables: { email: email, fullname: name } });
+  };
+
   return (
     <div>
       <div className="padding-container pb-20 pt-10 md:pt-10 md:pb-10 space-y-10">
@@ -134,7 +161,7 @@ const ContactUs = () => {
               fontSize="18px"
               lineHeight={"19px"}
               color={"#FF6E4F"}
-              onClick={sendContact}
+              onClick={onSubmitEmail}
             >
               Submit
             </Button>
