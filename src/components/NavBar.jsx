@@ -9,11 +9,11 @@ import {
   DrawerHeader,
   DrawerOverlay,
   IconButton,
-  useDisclosure
+  useDisclosure,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo_full.png';
+import logo from "../assets/logo_bettermark.png";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <nav
       className=" to-transparent bg-white z-[200]
-    flex items-center justify-between py-4 padding-container sticky top-0 shadow-lg"
+    flex items-center justify-between py-2 padding-container sticky top-0 shadow-lg"
     >
       <div>
         <Link to="/">
@@ -50,7 +50,7 @@ const NavBar = () => {
           bg={"transparent"}
           _hover={{ bg: "transparent" }}
           _active={{ bg: "transparent" }}
-          icon={<HamburgerIcon color={'black'} />}
+          icon={<HamburgerIcon color={"black"} />}
         />
       </div>
       <Drawer
