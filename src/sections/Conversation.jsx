@@ -17,19 +17,6 @@ const GET_ALL = gql`
 const Conversation = () => {
   const { data } = useQuery(GET_ALL);
 
-  console.log(data?.session02S);
-
-  /*   const item0 = data?.session02S[0];
-  const item1 = data?.session02S[1];
-  const item2 = data?.session02S[2]; */
-
-  /*   console.log(item0.title);
-  console.log(item1.title);
-  console.log(item2.title);
-  console.log(item0.subtitle);
-  console.log(item1.subtitle);
-  console.log(item2.subtitle);
- */
   return (
     <div className="bg-[#eaeaea]">
       <div className="padding-container relative py-10 gap-10 text-black">

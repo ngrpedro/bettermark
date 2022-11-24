@@ -3,8 +3,23 @@ import { CalendarCheck } from "phosphor-react";
 import React from "react";
 import highfive from "../assets/high-five.svg";
 import thumbup from "../assets/thumb-up.svg";
+import { useQuery, gql } from "@apollo/client";
+
+const GET_ALL = gql`
+  query {
+    session05S {
+      id
+      title
+      icon {
+        url
+      }
+    }
+  }
+`;
 
 const Steps = () => {
+  const { data } = useQuery(GET_ALL);
+
   return (
     <div className="padding-container pt-24 pb-16 m-auto border-t border-gray-800">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -31,17 +46,14 @@ const Steps = () => {
 
           <div
             className="rounded-md
-          space-y-4 hover:shadow-lg transition-all
+          space-y-2 hover:shadow-lg transition-all
           flex gap-5 items-start justify-center flex-col"
           >
-            <div className="m-auto">
-              <CalendarCheck size={40} />
+            <div className="m-auto w-10">
+              <img src={data?.session05S[0].icon.url} alt="" className="" />
             </div>
 
-            <p className="text-center">
-              You schedule a call, we talk about your business and goals and we
-              recommend the best plan and prices for you. No commitment.
-            </p>
+            <p className="text-center">{data?.session05S[0].title}</p>
           </div>
         </div>
 
@@ -71,13 +83,11 @@ const Steps = () => {
             space-y-4 hover:shadow-lg transition-all
             flex gap-5 items-start justify-center flex-col"
           >
-            <img src={thumbup} alt="" className=" mx-auto" />
+            <div className="m-auto w-10">
+              <img src={data?.session05S[1].icon.url} alt="" className="" />
+            </div>
 
-            <p className="text-center">
-              Once you say yes, we send you all the support material and
-              training and book the first coaching session. In the mean time we
-              already started working on your SEO/PPC campaigns
-            </p>
+            <p className="text-center">{data?.session05S[1].title}</p>
           </div>
         </div>
 
@@ -107,21 +117,17 @@ const Steps = () => {
             space-y-4 hover:shadow-lg transition-all
             flex gap-5 items-start justify-center flex-col"
           >
-            <img src={highfive} alt="" className=" mx-auto" />
+            <div className="m-auto w-10">
+              <img src={data?.session05S[2].icon.url} alt="" className="" />
+            </div>
 
-            <p className="text-center">
-              Monthly we analise results and performance, adjust strategies and
-              keep educating and coaching you for a life time relationship. And
-              you can just enjoy the feeling of watching your business
-              skyrocketing.
-            </p>
+            <p className="text-center">{data?.session05S[2].title}</p>
           </div>
         </div>
 
         <div className="md:col-span-3 flex items-center justify-center">
-
           <Button
-            as={'a'}
+            as={"a"}
             href="https://calendly.com/bettermarketingau/30min?month=2022-11"
             target={"_black"}
             mt="5"
