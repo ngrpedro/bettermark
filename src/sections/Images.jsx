@@ -1,11 +1,22 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
 import mainimage from "../assets/mainimage.svg";
+import { gql, useQuery } from "@apollo/client";
+
+const GET_ALL = gql`
+  query {
+    session03S {
+      title
+      subtitle
+    }
+  }
+`;
 
 const Images = () => {
+  const { data } = useQuery(GET_ALL);
+  console.log(data);
   return (
     <div className="padding-container py-20 bg-[#011238]">
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-0 items-center justify-center">
         <div className="space-y-7 text-justify max-w-[33rem] m-auto md:m-0 ">
           <h1 className="text-4xl font-bold font-quatt">That is why...</h1>
@@ -19,7 +30,7 @@ const Images = () => {
             your business.
           </p>
           <Button
-            as={'a'}
+            as={"a"}
             href="https://calendly.com/bettermarketingau/30min?month=2022-11"
             target={"_black"}
             bg={"#FF6E4F"}
@@ -37,7 +48,11 @@ const Images = () => {
           </Button>
         </div>
         <div className="">
-          <img src={mainimage} alt="" className="max-w-[310px] md:max-w-[23rem] lg:max-w-[28rem] m-auto" />
+          <img
+            src={mainimage}
+            alt=""
+            className="max-w-[310px] md:max-w-[23rem] lg:max-w-[28rem] m-auto"
+          />
         </div>
       </div>
     </div>
