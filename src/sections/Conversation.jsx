@@ -17,11 +17,13 @@ const GET_ALL = gql`
 const Conversation = () => {
   const { data } = useQuery(GET_ALL);
 
-  const item0 = data?.session02S[0];
-  const item1 = data?.session02S[1];
-  const item2 = data?.session02S[2];
+  console.log(data?.session02S);
 
-/*   console.log(item0.title);
+  /*   const item0 = data?.session02S[0];
+  const item1 = data?.session02S[1];
+  const item2 = data?.session02S[2]; */
+
+  /*   console.log(item0.title);
   console.log(item1.title);
   console.log(item2.title);
   console.log(item0.subtitle);
@@ -35,10 +37,7 @@ const Conversation = () => {
           <div className="space-y-16">
             <div className="space-y-8">
               <h1 className="block text-3xl md:text-3xl font-quatt">
-                Increasing your sales is always a challenge and although
-                everyone brags about how good online marketing is, its just very
-                hard to take the best of this opportunity if you are not an
-                expert.
+                {data?.session02S[3].title}
               </h1>
               <div className="p-5  border-l border-purple-200 space-y-8">
                 <div className="flex gap-4 -ml-[37px]">
@@ -46,8 +45,10 @@ const Conversation = () => {
                     <PenaWhite />
                   </div>
                   <div className=" pl-5 space-y-2">
-                    {/*                     <h1 className="font-bold text-xl">{item0.title}</h1>
-                    <p className="text-lg">{item0.subtitle}</p> */}
+                    <h1 className="font-bold text-xl">
+                      {data?.session02S[0].title}
+                    </h1>
+                    <p className="text-lg">{data?.session02S[0].subtitle}</p>
                   </div>
                 </div>
               </div>
@@ -60,8 +61,10 @@ const Conversation = () => {
                   <PenaWhite />
                 </div>
                 <div className=" pl-5 space-y-2">
-                  {/*                   <h1 className="font-bold text-xl">{item1.title}</h1>
-                  <p className="text-lg">{item1.subtitle}</p> */}
+                  <h1 className="font-bold text-xl">
+                    {data?.session02S[1].title}
+                  </h1>
+                  <p className="text-lg"> {data?.session02S[1].subtitle}</p>
                 </div>
               </div>
 
@@ -70,8 +73,10 @@ const Conversation = () => {
                   <PenaWhite />
                 </div>
                 <div className=" pl-5 space-y-2">
-                  {/*                   <h1 className="font-bold text-xl">{item2.title}</h1>
-                  <p className="text-lg">{item2.subtitle}</p> */}
+                  <h1 className="font-bold text-xl">
+                    {data?.session02S[2].title}
+                  </h1>
+                  <p className="text-lg"> {data?.session02S[2].subtitle}</p>
                 </div>
               </div>
             </div>
