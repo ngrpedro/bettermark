@@ -8,27 +8,23 @@ const GET_ALL = gql`
     session03S {
       title
       subtitle
+      subsubtitle
     }
   }
 `;
 
 const Images = () => {
   const { data } = useQuery(GET_ALL);
-  console.log(data);
+
   return (
     <div className="padding-container py-20 bg-[#011238]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-0 items-center justify-center">
         <div className="space-y-7 text-justify max-w-[33rem] m-auto md:m-0 ">
-          <h1 className="text-4xl font-bold font-quatt">That is why...</h1>
-          <p>
-            We want to eliminate digital marketing completely from your to do
-            list and develop a marketing strategy that will increase your
-            profits and help you achieve your goals.
-          </p>
-          <p>
-            That way, you can continue working on what you’re good at: growing
-            your business.
-          </p>
+          <h1 className="text-4xl font-bold font-quatt">
+            {data?.session03S[0].title}
+          </h1>
+          <p>{data?.session03S[0].subtitle}</p>
+          <p>{data?.session03S[0].subsubtitle}</p>
           <Button
             as={"a"}
             href="https://calendly.com/bettermarketingau/30min?month=2022-11"

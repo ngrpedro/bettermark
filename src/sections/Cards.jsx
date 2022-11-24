@@ -20,6 +20,7 @@ const GET_ALL = gql`
 
 const Cards = () => {
   const { data } = useQuery(GET_ALL);
+  console.log(data);
 
   return (
     <div
