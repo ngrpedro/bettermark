@@ -78,14 +78,16 @@ const ContactUs = () => {
           <div className="bg-[#d4dbe9] rounded-t-lg md:rounded-bl-lg md:rounded-tr-none space-y-5  p-10">
             <h1 className="text-3xl font-bold">Get in touch</h1>
             <div className="space-y-3">
-              <p className="text-gray-600">584 Evergreen Terrace</p>
+              <p className="text-gray-600">
+                Adress: Unit 51, 8 Distribution Court Arundel, QLD, 4214
+              </p>
               <p className="text-gray-600 flex items-center justify-start gap-2">
                 <Phone size={22} />
-                +1 (555) 123-4567
+                Isabella +61 435 898 291
               </p>
               <p className="text-gray-600 flex items-center justify-start gap-2">
                 <At size={22} />
-                support@example.com
+                isabella@bettermarketing.com.au
               </p>
               <p className="text-gray-700 text-lg  font-bold pt-5">
                 Let's keep in touch!
@@ -116,17 +118,6 @@ const ContactUs = () => {
                                     hover:border hover:border-[#FF6E4F]"
               />
             </div>
-            <input
-              type="text"
-              name="website"
-              value={website}
-              onChange={(e) => setWebsite(e.target.value)}
-              placeholder="Web Site"
-              className="p-4 border border-gray-300 w-full rounded-lg 
-                                placeholder:text-gray-400 placeholder:font-normal shadow-sm 
-                                    hover:border hover:border-[#FF6E4F]"
-            />
-
             <input
               type="text"
               placeholder="Email"
