@@ -6,21 +6,28 @@ const Header = () => {
   return (
     <div className="padding-container pb-20 pt-10 md:pt-10 md:pb-10 flex flex-col text-center items-center justify-center gap-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-0 items-center justify-center">
-        <h1 className="md:col-span-2 font-bold text-4xl md:text-6xl lg:text-left font-quatt">
-          Do you want to <span className="text-[#AB72D8]"> grow your business </span> while {""}
-          <span className="text-[#AB72D8]">stop wasting</span> {""}
-          money with<span className="text-[#AB72D8]"> marketing </span> that doesnt work?
+        <h1 className="md:col-span-2 font-bold text-4xl md:text-5xl lg:text-left font-quatt">
+          <span className="text-[#AB72D8]"> Stop procrastinating. </span>
+          <br /> You know you should be doing{" "}
+          <span className="text-[#AB72D8]"> better </span> with your
+          <span className="text-[#AB72D8]"> marketing </span>
+          with so much technology and{" "}
+          <span className="text-[#AB72D8]"> opportunity </span> out there. And
+          that is easier than you think.
         </h1>
         <div className="m-auto max-w-[348px] md:max-w-[29rem] ">
           <img src={mainimage_desk} alt="" className="mt-16 lg:mt-0" />
         </div>
       </div>
-      <p className="font-normal text-2xl leading-[23px] max-w-[52rem] mt-2">
-        We believe that there are only three ways to grow your business and we
-        are here to do whatever it takes to help you nail each one of them.
+      <p className="font-normal text-xl leading-[23px] max-w-[52rem] mt-2">
+        You don’t need to double your spends or add any stress to your life. All
+        you need is a full-service marketing agency like us to help you grow
+        your profits by taking care of the only three things that matter in
+        marketing: driving traffic, maximising conversions and increasing how
+        much each customer spends in his life time.
       </p>
       <Button
-        as={'a'}
+        as={"a"}
         href="https://calendly.com/bettermarketingau/30min?month=2022-11"
         target={"_black"}
         bg={"#FF6E4F"}

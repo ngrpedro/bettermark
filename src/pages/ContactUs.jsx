@@ -1,11 +1,19 @@
 import { At, Phone } from "phosphor-react";
 import React, { useState } from "react";
-import { Button } from "@chakra-ui/react";
+import {
+  Button,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  useToast,
+} from "@chakra-ui/react";
 import message from "../assets/message.svg";
 import { gql, useQuery, useMutation } from "@apollo/client";
-
-/* import { Client } from "@hubspot/api-client";
-const hubspotClient = new Client({ accessToken: 'pat-eu1-6ea4e478-56ec-4d2a-8965-98a588bbcfc6' }); */
 
 const GET_ALL_CONTACTS = gql`
   query {
@@ -37,25 +45,26 @@ const ContactUs = () => {
 
   const [addContact] = useMutation(POST_CONTACT);
 
-  /*   const sendContact = async () => {
-    let contact = {
-      firstname: name,
-      website,
-    };
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const toast = useToast();
 
-    const createContactResponse = await hubspotClient.crm.contacts.basicApi
-      .create(contact)
-      .then((resp) => {
-        console.log(resp);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }; */
-
-  const onSubmitEmail = () => {
+  const onSubmitEmail = (e) => {
+    e.preventDefault();
     console.log({ name, email });
     addContact({ variables: { email: email, fullname: name } });
+    /* onOpen(); */
+    setName("");
+    setPhone("");
+    setEmail("");
+    setObs("");
+
+    toast({
+      title: "Email sent.",
+      description: "We got it. We'll get in touch.",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
   };
 
   return (
@@ -95,11 +104,15 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="col-span-2 p-10 space-y-4">
+          <form
+            onSubmit={(e) => onSubmitEmail(e)}
+            className="col-span-2 p-10 space-y-4"
+          >
             <div className="grid grid-cols-2 gap-5">
               <input
                 type="text"
                 name="name"
+                required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Full Name"
@@ -108,7 +121,7 @@ const ContactUs = () => {
                                     hover:border hover:border-[#FF6E4F]"
               />
               <input
-                type="text"
+                type="number"
                 name="phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
@@ -118,8 +131,10 @@ const ContactUs = () => {
                                     hover:border hover:border-[#FF6E4F]"
               />
             </div>
+
             <input
-              type="text"
+              type="email"
+              required
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -128,10 +143,12 @@ const ContactUs = () => {
                                     hover:border hover:border-[#FF6E4F]"
             />
             <textarea
-              name="obg"
-              id="obg"
+              name="obs"
+              id="obs"
               cols="30"
               rows="3"
+              value={obs}
+              onChange={(e) => setObs(e.target.value)}
               placeholder="Tell something to us"
               className="p-4 border border-gray-300 w-full rounded-lg 
                                     placeholder:text-gray-400 placeholder:font-normal shadow-sm 
@@ -139,6 +156,7 @@ const ContactUs = () => {
             ></textarea>
 
             <Button
+              type="submit"
               border={"2px"}
               borderColor={"#FF6E4F"}
               bg="transparent"
@@ -152,11 +170,10 @@ const ContactUs = () => {
               fontSize="18px"
               lineHeight={"19px"}
               color={"#FF6E4F"}
-              onClick={onSubmitEmail}
             >
               Submit
             </Button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
