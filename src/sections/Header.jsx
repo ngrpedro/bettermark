@@ -12,10 +12,7 @@ const Header = () => {
           </span>
           <br /> You know you should be doing{" "}
           <span className="text-[#AB72D8]"> better </span> with your
-          <span className="text-[#AB72D8]"> marketing </span>
-          with so much technology and{" "}
-          <span className="text-[#AB72D8]"> opportunity </span> out there. And
-          that is easier than you think.
+          <span className="text-[#AB72D8]"> marketing</span>.
         </h1>
         <div
           className="m-auto max-w-[348px] md:max-w-[29rem] 
